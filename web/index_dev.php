@@ -17,6 +17,9 @@ define('BASE_APP_NS', 'app\\');
 define('MOD_NS', 'modules\\');
 define('ELF_NS', 'elf\\');
 
+define('TIMESTAMP', time());
+date_default_timezone_set('PRC');
+
 /**
  * APP_PATH，APP_NS这两个宏定义会自动在CoreDomain里面根据域名来定义
  */
