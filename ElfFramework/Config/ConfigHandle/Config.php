@@ -1,10 +1,13 @@
 <?php
 /**
 * 读取配置文件类
+* 暂时只支持配置文件为数组的格式
 */
 namespace ElfFramework\Config\ConfigHandle;
 
 use ElfFramework\Domain\CoreDomain;
+use ElfFramework\Config\ConfigHandle\ConfigArray;
+use ElfFramework\Exception\CommonException;
 
 class Config
 {
@@ -13,15 +16,20 @@ class Config
 
 
 	public static function load($configFileName , $ext = EXT){
-		$file = $configFileName . $ext;
+		$key = $file = $configFileName . $ext;
 
-		if (array_key_exists($file, self::$configFile)) {
-			return self::$configFile[$file];
+		if (array_key_exists($key, self::$configFile)) {
+			return unserialize(self::$configFile[$key]);
 		}
 
-		$content 	= self::doLoad($file);
-		self::$configFile[$file] 	= is_array($content) ? $content : NULL;
-		return  self::$configFile[$file];
+		$content 	= self::_getContent($file);
+		$content 	= is_array($content) ? $content : NULL;
+
+		$arrObj = new ConfigArray($file, $content);
+
+		self::$configFile[$key] 	= serialize($arrObj);
+
+		return  $arrObj;
 	}
 	
 
@@ -30,7 +38,7 @@ class Config
 	 * 2,查找app项目的配置
 	 * 3,查找系统的配置
 	 */
-	private static function doLoad($file){
+	private static function _getContent($file){
 		if (CoreDomain::isSubDomain()) {
 			$path 	= APP_PATH . 'config' . DS . $file;
 			if (is_file($path)) {
@@ -48,7 +56,8 @@ class Config
 			return require $path;
 		}
 
-		return NULL;
+		throw new CommonException("找不到配置文件" . $file . "，请在" . APP_NS . "config" . DS . "目录下添加", 1);
+		
 	}
 
 }

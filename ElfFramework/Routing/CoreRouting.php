@@ -11,6 +11,14 @@ use ElfFramework\Domain\CoreDomain;
 class CoreRouting
 {
 
+	/**
+	 * 控制器预留的方法
+	 * @var array
+	 */
+	private static $sysFun 	= array(
+		'before', 'after', 'set', 'display', 'view', 'param'
+	);
+
 
 	public static function doRouting(){
 		$controller 	= CoreRequest::data('controller');
@@ -42,7 +50,7 @@ class CoreRouting
 			throw new CommonException('控制器' . $controller . '的方法' . $action . '()属性应该为public');		
 		}
 
-		if (in_array($action, CoreController::getSysFun())) {
+		if (in_array($action, self::$sysFun)) {
 			throw new CommonException('控制器' . $controller . '的方法' . $action . '()不能为系统预留函数');		
 		}
 
@@ -55,6 +63,8 @@ class CoreRouting
 		$obj->after();
 
 	}
+
+
 
 	
 }

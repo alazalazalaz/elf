@@ -34,7 +34,7 @@ date_default_timezone_set('PRC');
  */
 define('DOMAIN_NAME', 'elf');
 
-
+header("Content-Type:text/html;charset=utf8");
 
 /**
  * 加载框架

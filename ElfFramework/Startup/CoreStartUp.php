@@ -10,6 +10,7 @@ use ElfFramework\Routing\CoreRouting;
 use ElfFramework\Routing\CoreRequest;
 use ElfFramework\Domain\CoreDomain;
 use ElfFramework\Config\ConfigHandle\Config;
+use ElfFramework\Lib\Common\Func;
 
 class CoreStartUp
 {
@@ -37,6 +38,15 @@ class CoreStartUp
 		$loadObj 	= new CoreAutoload();
 		$loadObj->init();
 
+		/**
+		 * 初始化cookie
+		 */
+		// self::initCookie();
+
+		/**
+		 * 初始化session
+		 */
+		self::initSession();
 		
 
 //判断系统属性等
@@ -80,10 +90,18 @@ class CoreStartUp
 
 
 	private static function test(){
-		/**
-		 * 加载配置文件
-		 */
-		var_dump(CoreRequest::data());
+
+	}
+
+
+	private static function initSession(){
+		$bootstrap 	= Config::load('bootstrap');
+
+		$domain 	= $bootstrap->get('cookieDomain');
+		session_set_cookie_params(0, '/', $domain, FALSE, TRUE);
+
+		$sessionName= $bootstrap->get('sessionName');
+		session_name($sessionName);
 	}
 }
 

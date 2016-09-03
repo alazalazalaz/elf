@@ -1,0 +1,1 @@
+im i ndex.tpl{$name}

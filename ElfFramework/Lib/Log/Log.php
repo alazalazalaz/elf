@@ -16,7 +16,7 @@ class Log
 	 * @param  string
 	 * @return NULL
 	 */
-	public static function write($message, $level = '', $file = '', $path = ''){
+	public static function write($message, $level = 3, $file = '', $path = ''){
 
 		$level 	= empty($level) ? 3 : $level;
 		$file 	= self::_createFileName($file);

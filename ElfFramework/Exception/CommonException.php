@@ -7,6 +7,7 @@
 namespace ElfFramework\Exception;
 
 use Exception;
+use ElfFramework\Lib\Common\Func;
 
 class CommonException extends Exception
 {
@@ -43,7 +44,7 @@ class CommonException extends Exception
 
 
 	public function shutdownHandle(){
-
+var_dump(Func::getMemUse());
 		$lastError = error_get_last();
 		if ($lastError) {
 			// ob_get_level() and ob_clean();
