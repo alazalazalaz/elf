@@ -10,15 +10,13 @@ use ElfFramework\Lib\Common\Func;
 use ElfFramework\Lib\Cookie\Cookie;
 use ElfFramework\Lib\Session\Session;
 use ElfFramework\Lib\Hash\Hash;
-// use ElfFramework\Vendor\Smarty\CoreSmarty;
-use ElfFramework\View\CoreView;
 
 class AaController extends AppController
 {
 	
 	public function test(){
-		$a = new CoreView();
-		echo 333;
+		$this->set('  ', '333333');
+		$this->view('index');
 	}
 	
 	public function before(){

@@ -35,7 +35,6 @@ class CoreAutoload
 			require self::$classMap[$namespaceClassName];
 			return TRUE;
 		}
-
 		// throw new CommonException('目录：' . $fileFullPath . ' 找不到该文件。');
 
 	}
