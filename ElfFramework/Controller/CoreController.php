@@ -29,11 +29,11 @@ class CoreController
 		switch ($type) {
 			case 'int':
 				$default = isset($default) ? intval($default) : 0;
-				return isset($param[$key]) ? intval($param[$key]) : $default; 
+				return isset($param[$key]) ? intval($param[$key]) : $default;
 				break;
 			case 'string':
 				$default = isset($default) ? $default : '';
-				return isset($param[$key]) ? string($param[$key]) : $default; 
+				return isset($param[$key]) ? string($param[$key]) : $default;
 				break;
 			
 			default:

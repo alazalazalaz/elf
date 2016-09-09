@@ -1,0 +1,24 @@
+file:
+	CoreController.php			控制器核心类，尽量不要修改
+	Controller.php				控制器类，可以在这里重构一些控制器底层方法
+
+struct:
+	Controller extends CoreController
+
+function:
+	适用类：
+	Controller
+	CoreController
+	方法：
+	$this->param($key, $type = '', $default = '');	//获取URL以及表单中的参数，包括了_get和_post的
+
+	$this->before();	//控制器执行action前执行的方法
+
+	$this->after();		//控制器执行action后执行的方法
+
+	$this->set();		//视图方法，设置value到模板（默认smarty引擎）
+
+	$this->view();		//视图方法，渲染模板(默认smatry引擎，具体实现可以参见ElfFramework/view/View.php )
+
+	注意：
+	调用视图方法会去动态加载视图引擎，大概会占用600KB的内存。但是多次调用只会动态加载一次。

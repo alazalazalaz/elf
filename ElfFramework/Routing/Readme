@@ -1,0 +1,40 @@
+file:
+	CoreRequest.php			处理URL请求的核心类
+	CoreRouting.php			处理URL路由的核心类
+
+function:
+	适用类：
+	CoreRequest
+
+	use ElfFramework\Routing\CoreRequest;
+
+	self::initRequest();
+	作用：
+	1、初始化URL的控制器
+	2、初始化URL的方法
+	3、初始化URL的参数，包含（$_GET,$_POST,?a=xxx&b=xxx, /a/xxx/b/xxx）这四种传参方式
+	4、初始化IP.PORT。
+
+	self::data($key = '');
+	作用：
+	1、根据传入的key返回对应的数据，key可以为'controller', 'action', 'param'等具体详见方法
+
+
+
+	适用类：
+	CoreRouting
+
+	use ElfFramework\Routing\CoreRouting;
+	
+	self::doRouting();
+	作用：
+	1、初始化路由
+	2、判断控制器是否是controller子类
+	3、判断....
+	...
+	...
+	...
+	8、执行控制器的before()方法
+	9、执行控制器方法
+	10、执行控制器after()方法
+

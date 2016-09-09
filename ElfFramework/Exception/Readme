@@ -1,0 +1,17 @@
+file:
+	CommonException.php				一个通用的异常类
+	ErrorPage.php					系统出错的异常页面
+
+function:
+	适用类：
+	CommonException
+
+	方法：
+	use ElfFramework\Exception\CommonException;
+
+	$obj->init();
+	作用：
+	1、设置捕获异常的方法
+	2、设置捕获错误的方法
+	3、设置系统执行结束前执行的方法
+	

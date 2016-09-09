@@ -1,0 +1,28 @@
+file:
+	SmartyView.php				smarty引擎的封装类
+	View.php					视图调用类
+	ViewInterface.php			视图接口
+
+struct:
+	SmartyView implements ViewInterface 	所有不同类型的视图都要实现viewInterface里面的方法
+
+
+function:
+	适用类：
+	View
+
+	方法：
+	use ElfFramework\View\View;
+	
+	$viewObj = self::instance($tplName);
+	作用：
+	1、根据传入的模板名称(smarty或者twig等)，返回该模板的对象
+	2、$viewObj的方法：
+		2.1、$viewObj->set($key, $value);		设置值到模板文件
+		2.2、$viewObj->view($fileName);			
+			渲染模板文件，系统查找模板文件的路径依赖当前域名情况，可能为
+				'app/view/$fileName.tpl
+				或者
+				'modules/xxxx/view/$fileName.tpl'
+
+

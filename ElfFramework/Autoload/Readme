@@ -1,0 +1,25 @@
+file:
+	AutoloadClassMap.php		自动加载map
+	CoreAutoload.php			自动加载类
+
+function:
+	适用类：
+	AutoloadClassMap.php
+	说明：
+	该文件返回命名空间和文件路径的对应关系,自动加载类找不到类的时候会去这里寻找一遍。
+	eg:
+	namespace\xxx\xx\className => filepath/xxx/xxx/className.php
+
+
+	适用类：
+	CoreAutoload.php
+	说明：
+	自动加载类，加载流程如下：
+	1、根据传入的namespaceClassName判断文件是属于框架内还是框架外的
+	2、如果是框架内的，加载框架path + namespaceClassName
+	3、如果是框架外的，加载root path + namespaceClassName
+	4、如果找不到，寻找AutoloadClassMap.php里面的对应关系
+	5、如果找不到，就返回。
+
+	@todo
+	1、有个优化点，如果框架和root path在同级目录，则可以把1-3步骤合并为一步。
