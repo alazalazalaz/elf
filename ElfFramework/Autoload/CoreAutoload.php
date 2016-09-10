@@ -42,6 +42,7 @@ class CoreAutoload
 
 	private function getFilePathByNs($namespaceClassName){
 		$array 	= explode('\\', $namespaceClassName);
+		$array  = array_filter($array);
 		$firstNs= array_shift($array);
 
 		if ($firstNs == 'ElfFramework') {
