@@ -23,7 +23,7 @@ class CoreAutoload
 
 
 	private function loadClass($namespaceClassName){
-
+		
 		$fileFullPath 	= $this->getFilePathByNs($namespaceClassName);
 		
 		if (file_exists($fileFullPath)) {

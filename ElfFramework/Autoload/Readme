@@ -19,7 +19,7 @@ function:
 	2、如果是框架内的，加载框架path + namespaceClassName
 	3、如果是框架外的，加载root path + namespaceClassName
 	4、如果找不到，寻找AutoloadClassMap.php里面的对应关系
-	5、如果找不到，就返回。
+	5、如果找不到，就返回。(执行其他的自动加载类，比如smarty的)
 
 	@todo
 	1、有个优化点，如果框架和root path在同级目录，则可以把1-3步骤合并为一步。

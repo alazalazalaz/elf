@@ -15,6 +15,12 @@ class Config
 	private static $configFile = array();
 
 
+	/**
+	 * 单例模式加载
+	 * @param  string $configFileName 文件名
+	 * @param  string $ext            文件后缀名
+	 * @return array                  文件内容
+	 */
 	public static function load($configFileName , $ext = EXT){
 		$key = $file = $configFileName . $ext;
 
@@ -25,11 +31,12 @@ class Config
 		$content 	= self::_getContent($file);
 		$content 	= is_array($content) ? $content : NULL;
 
-		$arrObj = new ConfigArray($file, $content);
+		return $content;
+		// $arrObj = new ConfigArray($file, $content);
 
-		self::$configFile[$key] 	= serialize($arrObj);
+		// self::$configFile[$key] 	= serialize($arrObj);
 
-		return  $arrObj;
+		// return  $arrObj;
 	}
 	
 

@@ -4,20 +4,9 @@
 */
 namespace ElfFramework\Model;
 
-class Model
+use ElfFramework\Model\CoreModel;
+
+class Model extends CoreModel
 {
-	CONST MODEL_SUF 	= 'Model';
-	
-	function __construct()
-	{
-		# code...
-	}
 
-
-	public static function factory($modelName){
-		$filePath = str_replace('_', DS, $modelName);
-		$filePath = APP_PATH . 'model/' . $filePath;
-		var_dump($filePath);exit;
-
-	}
 }

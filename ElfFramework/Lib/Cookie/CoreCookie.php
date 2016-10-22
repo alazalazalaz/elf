@@ -36,7 +36,8 @@ class CoreCookie
 		}
 
 		$exp 	= TIMESTAMP + $exp;
-		$domain = Config::load('bootstrap')->get('cookieDomain');
+		$domain = Config::load('bootstrap');
+		$domain = $domain['cookieDomain'];
 		$secure = FALSE;
 		$httponly=TRUE;
 		

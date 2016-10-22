@@ -1,5 +1,5 @@
 file:
-	SmartyView.php				smarty引擎的封装类
+	SmartyView.php				smarty引擎的封装类(其他引擎的命名方式也是 引擎+View.php，eg:TwigView.php)
 	View.php					视图调用类
 	ViewInterface.php			视图接口
 
@@ -14,7 +14,7 @@ function:
 	方法：
 	use ElfFramework\View\View;
 	
-	$viewObj = self::instance($tplName);
+	$viewObj = View::instance($tplName);
 	作用：
 	1、根据传入的模板名称(smarty或者twig等)，返回该模板的对象
 	2、$viewObj的方法：

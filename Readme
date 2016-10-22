@@ -11,6 +11,8 @@ AJAX上传文件的问题
 输入的验证
 配置，设置
 单例模式
+
+
 模型封装，PDO。。。55555
 
 引擎demo。。。。。5555
@@ -20,6 +22,11 @@ AJAX上传文件的问题
 php接受AJAX传递过来参数为request payload形式的方式：
 $request_body = file_get_contents('php://input');
         $data = json_decode($request_body, TRUE);
+
+文件操作类
+文件/图片下载类
+
+把控制器对外的接口封装为request，request里面只放对外的接口
 		
 |app
 ---|config
@@ -46,10 +53,13 @@ $request_body = file_get_contents('php://input');
 -------|redis
 -------|memcache
 ---|db
+-------|driver
+-------|query
 ---|routing
 -------|request
 -------|routing
 ---|exception
+
 -------|CommonException
 ---|lib
 -------|log
@@ -88,3 +98,7 @@ composer self-update && composer create-project --prefer-dist cakephp/app my_app
 
 
 config的加载，优先加载app下面的config配置文件，如果没有，再加载elf框架下面的
+
+
+yii的内存占用过多，因为controller和model的父类过多，当多个模型的时候每个模型都有自己的一套父类。
+还有个原因是加载的类过多，貌似没有说服力。

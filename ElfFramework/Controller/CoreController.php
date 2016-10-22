@@ -60,5 +60,11 @@ class CoreController
 		$viewObj 	= View::instance('smarty');
 		$viewObj->view($file);
 	}
+
+
+	public function setTemplateDir($path){
+		$viewObj 	= View::instance('smarty');
+		$viewObj->setTemplateDir($file);
+	}
 	
 }

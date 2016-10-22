@@ -97,10 +97,10 @@ class CoreStartUp
 	private static function initSession(){
 		$bootstrap 	= Config::load('bootstrap');
 
-		$domain 	= $bootstrap->get('cookieDomain');
+		$domain 	= $bootstrap['cookieDomain'];
 		session_set_cookie_params(0, '/', $domain, FALSE, TRUE);
 
-		$sessionName= $bootstrap->get('sessionName');
+		$sessionName= $bootstrap['sessionName'];
 		session_name($sessionName);
 	}
 }

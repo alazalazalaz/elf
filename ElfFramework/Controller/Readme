@@ -10,7 +10,7 @@ function:
 	Controller
 	CoreController
 	方法：
-	$this->param($key, $type = '', $default = '');	//获取URL以及表单中的参数，包括了_get和_post的
+	$this->param($key, $type = '', $default = '');	//获取URL以及表单中的参数，包括了_get和_post的，type表示获取的值是int或者string，default表示默认返回的值
 
 	$this->before();	//控制器执行action前执行的方法
 
@@ -19,6 +19,8 @@ function:
 	$this->set();		//视图方法，设置value到模板（默认smarty引擎）
 
 	$this->view();		//视图方法，渲染模板(默认smatry引擎，具体实现可以参见ElfFramework/view/View.php )
+
+	$this->setTemplateDir(); //视图方法，设置要渲染的模板的目录，默认在app/view或者modules/xxx/view（看具体域名项目）
 
 	注意：
 	调用视图方法会去动态加载视图引擎，大概会占用600KB的内存。但是多次调用只会动态加载一次。

@@ -53,4 +53,10 @@ class SmartyView implements ViewInterface
 
 		$this->_smarty->display($fullPath);
 	}
+
+
+	public function setTemplateDir($path){
+		$this->_smarty->setTemplateDir($path);
+	}
+
 }

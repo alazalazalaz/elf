@@ -13,11 +13,11 @@ function:
 	方法：
 	use ElfFramework\Config\ConfigHandle\Config;
 	
-	$result = self::load('database');
-	1、读取配置文件名为database.php的文件，查找顺序为优先modules/Config/database.php再app/Config/database.php最后ElfFramework/Config/database.php，找到一个则停止。
+	$result = Config::load('database');
+	1、读取配置文件名为database.php的文件，查找顺序为优先modules/xxx/Config/database.php再app/Config/database.php最后ElfFramework/Config/database.php，找到一个则停止。
 	2、返回的result是个对象
 		$result->get('key');										普通数组取值
-		$result->get(array('database', 'db1', 'host'));				取多维数组的值
+		$result->get('key.key1');									取多维数组的值
 
 
 
@@ -33,8 +33,8 @@ function:
 
 return array(
 	'database'	=> array(
-		'db1'	=> array(
-			'host'	=> 'xxx',
+		'key'	=> array(
+			'key1'	=> 'xxx',
 			'port'	=> 'xxx',
 			'user'	=> 'xxx',
 			...
