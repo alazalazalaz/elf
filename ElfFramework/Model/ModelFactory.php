@@ -1,6 +1,7 @@
 <?php
 /**
 * 存放model实例
+* @todo 暂时废弃
 */
 namespace ElfFramework\Model;
 

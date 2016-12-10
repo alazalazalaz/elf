@@ -33,11 +33,11 @@ class Log
 
 
 	private static function _createFileName($file){
-		if (!$file) {
-			$file = date('Ymd-H', TIMESTAMP);
+		if ($file) {
+			$file .= '-' . date('Ymd-H', TIMESTAMP) . '.log';
+		}else{
+			$file = date('Ymd-H', TIMESTAMP) . '.log';
 		}
-
-		$file .= '.log';
 
 		return $file;
 	}

@@ -1,0 +1,68 @@
+关于pdo：
+
+1、PDO::query和PDO::exec方法区别：
+	1.1、query和exec都能执行所有的sql
+	1.2、query能执行所有exec能执行的，相当于mysql_query
+
+
+2、用PDO::query方法执行四条原生增删改查语句后返回的区别：
+	2.1、如果失败都返回false
+	2.2、如果成功都返回一个PDOstatement对象
+	2.3、调用PDOstatement对象的不同方法，返回的结果不一样
+										select				insert				update				delete
+		PDOstatement::fetchAll			结果集				null				null				null
+		PDOstatement::debugDumpParams 	query执行的sql语句 	query执行的sql语句	query执行的sql语句 	query执行的sql语句
+		PDOstatement::rowCount			结果集条目数		insert的条目数		修改成功的条目数	同update
+																				(不光操作成功，还
+																				包含有value改变)
+
+3、PDO::exec() 在一个单独的函数调用中执行一条 SQL 语句，返回受此语句影响的行数。
+PDO::exec() 不会从一条 SELECT 语句中返回结果。对于在程序中只需要发出一次的 SELECT 语句，可以考虑使用 PDO::query()。
+对于需要发出多次的语句，可用 PDO::prepare() 来准备一个 PDOStatement 对象并用 PDOStatement::execute() 发出语句。
+
+4、PDO没有提供一个获取上一步sql执行的sql语句，只能通过返回的PDOstatement::debugDumpParams方法获取。
+
+
+注：
+
+1.为什么在DSN中指定了charset, 还需要执行set names <charset>呢？
+
+其实set names <charset>有两个作用：
+
+　　告诉mysql server, 客户端（PHP程序）提交给它的编码是什么
+
+      告诉mysql server, 客户端需要的结果的编码是什么
+
+也就是说，如果数据表使用gbk字符集，而PHP程序使用UTF-8编码，我们在执行查询前运行set names utf8, 告诉mysql server正确编码即可，无须在程序中编码转换。这样我们以utf-8编码提交查询到mysql server, 得到的结果也会是utf-8编码。省却了程序中的转换编码问题，不要有疑问，这样做不会产生乱码。
+
+那么在DSN中指定charset的作用是什么? 只是告诉PDO, 本地驱动转义时使用指定的字符集（并不是设定mysql server通信字符集），设置mysql server通信字符集，还得使用set names <charset>指令。
+
+2.在php 5.3.6以前的版本，PDO的预处理(prepare和execute方法)所做的工作是把字符串用php系统函数处理后赋值到sql里面，和自己调用mysql_real_eascape_string处理后塞进sql里面效果差不多，
+这种情况下都会存在多字符集注入问题，解决方法：PDO关闭预处理($pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);)执行这段代码后预处理的工作就交给mysql服务器了。
+	但是在5.3.6之后的版本PDO的预处理虽然没有bug了，但还是一定要保证php服务器和mysql的字符集一致，通过msyql_query(set charset utf8)之类解决。但这个和dsn中的字符集是两个概念。
+
+
+
+
+
+
+
+
+//my test function
+$select = 'select * from country limit 2';
+		$insert = 'insert into country (name,population) values (3,3)';
+		$update = 'update country set population=1 where id=2';
+		$delete = 'delete from country where id=10';
+
+		$resultSelect = $this->_con->query($select);
+		$resultInsert = $this->_con->query($insert);
+		$resultUpdate = $this->_con->query($update);
+		$resultDelete = $this->_con->query($delete);
+
+// var_dump($resultSelect, $resultInsert, $resultUpdate, $resultDelete);exit;
+
+		var_dump($resultSelect->rowCount());
+		var_dump($resultInsert->rowCount());
+		var_dump($resultUpdate->rowCount());
+		var_dump($resultDelete->rowCount());
+		exit;

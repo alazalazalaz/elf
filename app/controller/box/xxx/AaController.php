@@ -19,13 +19,25 @@ class AaController extends AppController
 {
 	
 	public function test(){
+		
+
+
+
+
+		// $sql = 'update country set population=1 where id=1';
+		$sql = 'select * from countdry';
 
 		$model = AppModel::factory();
-		$data = $model->select();
+		$model->findOne();
+		// $model->insert([]);
+		// $model->update(['code'=>23], ['id'=>6]);
+		// $model->delete(['id > ' => 29]);
+		// $model->execute('select * from country limit 2');
+		// $data = $model->query($sql);
 
 		echo '<pre>';
 		var_dump($data);
-		print_r($model);
+		// print_r($model);
 		echo '</pre>';exit;
 
 	}
