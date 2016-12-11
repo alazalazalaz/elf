@@ -27,12 +27,6 @@ class CoreModel extends Db
 	 * @var string
 	 */
 	public $tableName 		='';
-
-	/**
-	 * 数据库表名，全称(含前缀)
-	 * @var string
-	 */
-	private $tableFullName 	= '';
 	
 
 	/**
@@ -116,19 +110,36 @@ class CoreModel extends Db
 		if (empty($field) || !is_string($field)) {
 			$field = '*';
 		}
+$result = $result2 = '';
+		// $sql = $this->sql();
 
-		$sql = $this->sql();
+		// $sql->select($field)
+		// 	->from($this->tableName)
+		// 	->where(['id <'=>10, 'population >'=> 0]);
 
-		$sql->select($field)
-			->from($this->tableName)
-			->where(['id <'=>10, 'population >'=> 0]);
+		// // var_dump($sql->getParam());
+		// // var_dump($sql->getSql());
+		// // var_dump($sql->getType());
 
-		// var_dump($sql->getParam());
-		// var_dump($sql->getSql());
-		// var_dump($sql->getType());
+		// $result = $this->connect()->execute($sql)->all();
 
-		$result = $this->connect()->execute($sql)->all();
+		$result = $this->db()
+					 ->select('*')
+					 ->from($this->tableName)
+					 ->where(['id <'=>10, 'population >'=> 0])
+					 ->execute()
+					 ->all();
 
+
+
+		// $result2= $this->con()->execute('select * from pre_country where id>:id1 or id =:id2 limit 2', [':id1' => 15, ':id2' => 2])->all();
+
+			 // ->execute() //把这个函数封装在sql里面，同时要执行pdo的操作
+			 // ->all();
+			 
+		// var_dump($result->getParam());
+		// var_dump($result->getSql());
+		// var_dump($result->getType());
 
 var_dump($result);exit;
 	}
@@ -170,12 +181,6 @@ var_dump($result);exit;
 		}
 
 		return $this->connect()->query($sql);
-	}
-
-
-	public function tableName(){
-
-		return $this->tableName;
 	}
 	
 }

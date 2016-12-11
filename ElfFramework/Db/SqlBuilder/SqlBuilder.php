@@ -93,7 +93,7 @@ class SqlBuilder
 		$this->buildSets();
 
 		$this->buildValues();
-		
+
 		if ($this->sqlObj->part['update']) {
 			if (!$this->buildWhere()) {
 				throw new CommonException('sql build错误，update语句必须加where条件，若要修改全部请使用updateAll()方法。', 1);
@@ -134,11 +134,12 @@ class SqlBuilder
 
 	public function buildFrom(){
 		$from 	= $this->sqlObj->part['from'];
+		$prefix = $this->sqlObj->part['tablePrefix'];
 		if (empty($from)) {
 			return ;
 		}
 
-		$this->_sqlParts[] = sprintf($this->init['from'], $from);
+		$this->_sqlParts[] = sprintf($this->init['from'], $prefix . $from);
 	}
 
 
@@ -149,11 +150,13 @@ class SqlBuilder
 
 	public function buildInsert(){
 		$insert 	= $this->sqlObj->part['insert'];
+
+		$prefix = $this->sqlObj->part['tablePrefix'];
 		if (empty($insert)) {
 			return ;
 		}
 
-		$this->_sqlParts[] = sprintf($this->init['insert'], $insert);
+		$this->_sqlParts[] = sprintf($this->init['insert'], $prefix . $insert);
 	}
 
 
@@ -183,11 +186,13 @@ class SqlBuilder
 
 	public function buildUpdate(){
 		$update 	= empty($this->sqlObj->part['update']) ? $this->sqlObj->part['updateAll'] : $this->sqlObj->part['update'];
+
+		$prefix = $this->sqlObj->part['tablePrefix'];
 		if (empty($update)) {
 			return ;
 		}
 
-		$this->_sqlParts[] = sprintf($this->init['update'], $update);
+		$this->_sqlParts[] = sprintf($this->init['update'], $prefix . $update);
 	}
 
 

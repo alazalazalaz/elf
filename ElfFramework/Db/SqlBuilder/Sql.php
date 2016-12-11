@@ -11,7 +11,13 @@ use ElfFramework\Db\SqlBuilder\BindValue;
 class Sql
 {
 
-	public $tablePrefix 	= '';
+	public $pdoDriver = '';
+
+	/**
+	 * 数据库配置名
+	 * @var string
+	 */
+	public $dbConfigName 	= '';
 	
 	/**
 	 * 拼凑好的sql语句
@@ -38,13 +44,18 @@ class Sql
 	private $_sqlType = '';
 
 	/**
-	 * 组装为prepare sql的列名，eg: 列id的label为:id0 ,加个0是为了防止多个id重名，比如sql:update xx set id=10 where id=1;
+	 * 这个变量是临时变量，初始值为空数组。
+	 * 这个变量可能为以下数据：
+	 * array (size=2)
+		  'id' => int 2
+		  'population' => int 1 表示当前sql对象列为id的有2个，列为population的有1个。记录临时列的个数是为了防止重复(比如sql:update xx set id=10 where id=1就会重名)
 	 * @var array
 	 */
 	public $_columnLabel = [];
 
 
 	public $part 	= [
+		'tablePrefix'=>'',
 		'select'	=> '',
 		'insert'	=> '',
 		'update'	=> '',
@@ -71,10 +82,8 @@ class Sql
 
 	CONST DELETE = 'delete';
 
-	public function __construct($rowSql = ''){
-		if (!empty($rowSql)) {
-			$this->_initSqlObjByRowSql($rowSql);
-		}
+	public function __construct(){
+
 	}
 
 
@@ -247,48 +256,59 @@ class Sql
 			$this->part['limit'] = $limit . ',' . $offsetLimit;
 		}else{
 			$this->part['limit'] = $limit;
+		}	
+
+		return $this;
+	}
+	
+
+
+	/**
+	 *  1，加载配置
+		2，连接数据库得到PDO
+		(步骤1,2的实现在CoreDb::connect()方法里面)
+		3，拼凑SQL
+		4，执行
+		(步骤3,4的实现在$pdoDriver->execute()方法里面)
+	 * @param  string $rowSql 原始SQL语句
+	 * @param  array  $param  参数
+	 * @return result         详见ElfFramework\Db\Result\Result类的returnDefaultResult()方法
+	 */
+	public function execute($rowSql = '', $param = []){
+		if (empty($rowSql)) {
+
+		}elseif (is_string($rowSql)){
+			$this->_initSqlObjByRowSql($rowSql, $param);
+		}else{
+			throw new CommonException("sql拼接错误，execute($rowSql = '')方法参数只能为空或者原生SQL", 1);
 		}
 
-		
+		return $this->pdoDriver->execute($this);
+	}
+
+
+	public function setDbConfigName($dbConfigName){
+		$this->dbConfigName = $dbConfigName;
+	}
+
+	public function setPdoDriver($pdoDriver){
+		$this->pdoDriver = $pdoDriver;
+	}
+
+	public function setPrefix($prefix = ''){
+		$this->part['tablePrefix'] = $prefix;
 
 		return $this;
 	}
 
-
-	private function _prepareDivisor($where){
-		if (is_string($where)) {
-			//使用prepare方法，bindvalue
-			$this->part['where'] 	= $where;
-
-		}elseif (is_array($where)) {
-			//解析where
-			$prepareWhereStr = BuilderHelper::explodeDivisor($where, $this->_columnLabel);
-
-			$this->part['where'] 	= $prepareWhereStr;
-
-			$this->setParam(BindValue::getBindValue());
-
-			BindValue::clearBindValue();
-
-		}else{
-			throw new CommonException('sql拼接错误，_prepareDivisor($where)函数参数为字符串或者(因子模式)数组', 1);
-		}
+	public function getPrefix(){
+		return $this->part['tablePrefix'];
 	}
 
 
-
-
-
-
-
-
-
-
-	public function setPrefix($prefix = ''){
-		$this->tablePrefix = $prefix;
-	}
-
-
+	/**
+	 * 调用此方法开始编译SQL
+	 */
 	public function getSql(){
 		if (!$this->_builded) {
 			$this->_doBuild();
@@ -299,9 +319,9 @@ class Sql
 
 
 	public function getParam(){
-		// if (!$this->_builded) {
-		// 	$this->_doBuild();
-		// }
+		if (!$this->_builded) {
+			$this->_doBuild();
+		}
 
 		return $this->_param;
 	}
@@ -335,7 +355,7 @@ class Sql
 	}
 
 
-	public function setParam($param){
+	private function setParam($param){
 		$this->_param = array_merge($this->_param, $param);
 	}
 
@@ -349,13 +369,27 @@ class Sql
 		$this->_builded = TRUE;
 	}
 
-	private function _initSqlObjByRowSql($rowSql){
+	private function _initSqlObjByRowSql($rowSql, $param = ''){
 		$this->_builded = TRUE;
 		$this->_sql 	= $rowSql;
 		$this->_param 	= [];
-		$this->tablePrefix = '';
 		$this->_setType($this->_pregSqlType());
 		$this->_columnLabel = [];
+		if (!empty($param)) {
+			$this->_initParamByRowSql($param);
+		}
+	}
+
+
+	private function _initParamByRowSql($param){
+		if (!empty($param) && is_array($param)) {
+			foreach ($param as $key => $value) {
+				$this->_param[] = [
+					'column'	=> $key,
+					'value'		=> $value
+				];
+			}
+		}
 	}
 
 
@@ -369,5 +403,26 @@ class Sql
 		}
 
 		throw new CommonException('原生sql拼接错误，不存在的sql数据类型，原生sql语句：' . $this->_sql, 1);
+	}
+
+
+	private function _prepareDivisor($where){
+		if (is_string($where)) {
+			//使用prepare方法，bindvalue
+			$this->part['where'] 	= $where;
+
+		}elseif (is_array($where)) {
+			//解析where
+			$prepareWhereStr = BuilderHelper::explodeDivisor($where, $this->_columnLabel);
+
+			$this->part['where'] 	= $prepareWhereStr;
+
+			$this->setParam(BindValue::getBindValue());
+
+			BindValue::clearBindValue();
+
+		}else{
+			throw new CommonException('sql拼接错误，_prepareDivisor($where)函数参数为字符串或者(因子模式)数组', 1);
+		}
 	}
 }

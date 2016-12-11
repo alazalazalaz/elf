@@ -14,14 +14,13 @@ use ElfFramework\Routing\CoreRequest;
 use ElfFramework\Model\Model;
 use ElfFramework\Config\ConfigHandle\Config;
 use app\model\AppModel;
+use ElfFramework\Db\Database;
 
 class AaController extends AppController
 {
 	
 	public function test(){
 		
-
-
 
 
 		// $sql = 'update country set population=1 where id=1';

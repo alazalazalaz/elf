@@ -83,32 +83,23 @@ class MysqlPdo implements DriverInterface
 	 * @return [type]             [description]
 	 */
 	public function execute($sqlObj){
-		if (is_string($sqlObj) && !empty($sqlObj)) {
-			//处理原生的sql语句
-			$sqlObj = new Sql($sqlObj);
+		$sql 	= $sqlObj->getSql();
+		$param 	= $sqlObj->getParam();
+		
+		if (empty($sql)) {
+			throw new CommonException("$sqlObj对象中获取sql语句失败", 1);	
 		}
 
-		if(get_class($sqlObj) == 'ElfFramework\Db\SqlBuilder\Sql') {
-			$sql 	= $sqlObj->getSql();
-			$param 	= $sqlObj->getParam();
+		$sth = self::prepare($sql, $param);
 
-			if (empty($sql)) {
-				throw new CommonException("$sqlObj对象中获取sql语句失败", 1);	
-			}
-
-			$sth = self::prepare($sql, $param);
-
-			if (!empty($param) && is_array($param)) {
-				$sth->bindValue($param);
-			}
-			
-			$sth->execute();
-			
-			$result = new Result($this->getPdo(), $sqlObj, $sth);
-			return $result->returnDefaultResult();
-		}else{
-			throw new CommonException("execute($sqlObj)的参数应该是一个sql的对象", 1);
+		if (!empty($param) && is_array($param)) {
+			$sth->bindValue($param);
 		}
+		
+		$sth->execute();
+		
+		$result = new Result($this->getPdo(), $sqlObj, $sth);
+		return $result->returnDefaultResult();
 	}
 
 
