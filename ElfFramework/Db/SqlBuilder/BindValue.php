@@ -45,13 +45,28 @@ class BindValue
 	}
 
 
-	public static function setBindValuePure($keyValueArray = array()){
+	public static function setBindValuePure($keyValueArray = array(), $isMulti = FALSE){
 		if (!is_array($keyValueArray)) {
 			throw new CommonException('sql拼接错误，setBindValuePure函数必须是关联数组', 1);
 		}
-		foreach ($keyValueArray as $column => $value) {
-			self::$bindValue[] = ['column'=> $column, 'value' => $value];
+		if ($isMulti) {
+			foreach ($keyValueArray as $column => $value) {
+				$tmp = '';
+				foreach ($value as $k => $v) {
+					$tmp[] = ['column'=> $k, 'value' => $v];
+				}
+				if (!empty($tmp)) {
+					self::$bindValue[] = $tmp;
+				}
+			}
+
+			var_dump(self::getBindValue());exit;
+		}else{
+			foreach ($keyValueArray as $column => $value) {
+				self::$bindValue[] = ['column'=> $column, 'value' => $value];
+			}
 		}
+		
 	}
 
 	

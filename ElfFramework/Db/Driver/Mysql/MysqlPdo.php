@@ -103,6 +103,11 @@ class MysqlPdo implements DriverInterface
 	}
 
 
+	public function insertMulti(){
+
+	}
+
+
 	public function prepare($sql, $param){
 		try {
 			$sth = $this->getPdo()->prepare($sql);

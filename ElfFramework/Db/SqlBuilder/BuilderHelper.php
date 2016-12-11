@@ -59,9 +59,9 @@ class BuilderHelper
 	 * @return [type]          [description]
 	 */
 	public static function explodeDivisor(array $divisor, &$columnLabelArr, $currentLink = ' AND ', $leftBr = '', $rightBr = ''){
-		if (empty($divisor) || count($divisor)<1) {
-			throw new CommonException('sql拼接错误，where([key=>value])函数不能为空', 1);
-		}
+		// if (empty($divisor) || count($divisor)<1) {
+		// 	throw new CommonException('sql拼接错误，where([key=>value])函数不能为空', 1);
+		// }
 
 		$prepareArr = [];
 		$prepareStr = '';

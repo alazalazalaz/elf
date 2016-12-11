@@ -223,12 +223,12 @@ class Sql
 	}
 
 
-	public function bindValue($value){
+	public function bindValue($value, $isMulti = FALSE){
 		if (!is_array($value)) {
 			throw new CommonException('sql拼接错误，order($order)函数参数必须为数组', 1);
 		}
 
-		BindValue::setBindValuePure($value);
+		BindValue::setBindValuePure($value, $isMulti);
 
 		$this->setParam(BindValue::getBindValue());
 
@@ -260,7 +260,7 @@ class Sql
 
 		return $this;
 	}
-	
+
 
 
 	/**

@@ -8,24 +8,12 @@ use ElfFramework\Model\Model;
 class AppModel extends Model
 {
 	
-	public $dbConfigName = 'test';
+	public static $dbConfigName = 'test';
 
-	public $tablePrefix  = '';
+	public static $tablePrefix  = '';
 
-	public $tableName 	 = 'country';
+	public static $tableName 	= 'country';
 
+	public static $pk 			= 'id';
 
-	// public $dbName = 'test';
-
-	// public $tableSuffix = 'appsu_';
-
-	public function select(){
-		return $this->findOne();
-		// return $this->insert();
-	}
-
-
-	public function test(){
-
-	}
 }

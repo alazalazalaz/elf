@@ -16,13 +16,13 @@ class Db
 
 
 
-	public function db($dbConfigName = ''){
-		$dbConfigName = empty($dbConfigName) ? $this->dbConfigName : $dbConfigName;
+	public static function db($dbConfigName = ''){
+		$dbConfigName = empty($dbConfigName) ? static::$dbConfigName : $dbConfigName;
 
 		$sql = Database::db($dbConfigName);
 
-		if ($this->tablePrefix) {
-			$sql->setPrefix($this->tablePrefix);
+		if (static::$tablePrefix) {
+			$sql->setPrefix(static::$tablePrefix);
 		}
 
 		return $sql;

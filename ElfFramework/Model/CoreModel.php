@@ -15,19 +15,24 @@ class CoreModel extends Db
 	 * 数据库配置名称
 	 * @var string
 	 */
-	public $dbConfigName 	= 'default';
+	public static $dbConfigName 	= 'default';
 	
 	/**
 	 * 数据库表名前缀
 	 */
-	public $tablePrefix 	= '';
+	public static $tablePrefix 		= '';
 
 	/**
 	 * 数据库表名
 	 * @var string
 	 */
-	public $tableName 		='';
+	public static $tableName 		='';
 	
+	/**
+	 * 该表的主键
+	 * @var string
+	 */
+	public static $pk 				= '';
 
 	/**
 	 * 初始化db链接
@@ -43,21 +48,34 @@ class CoreModel extends Db
 	}
 
 
-	public function insert(array $fieldsValues){
-		$fieldsValues = [
-			'code'			=> 234,
-			'population' 	=> 'xx'
-		];
+	public static function save(array $fieldsValues){
+		if (empty($fieldsValues)) {
+			return FALSE;
+		}
 
-		$sql = $this->sql()->insert($this->tableName)->values($fieldsValues);
+		$result = self::db(static::$dbConfigName)
+						->insert(static::$tableName)
+						->values($fieldsValues)
+						->execute();
+		return $result;
+	}
 
-		var_dump($sql->getParam());
-		var_dump($sql->getSql());
-		var_dump($sql->getType());
+@todo 
+方法：插入多条数据
+已修改的地方有:
+sql::bindValue()方法
+BindValue::setBindValuePure()方法
+	public static function saveAll(array $multiFieldsValues){
+		if (empty($multiFieldsValues)) {
+			return FALSE;
+		}
 
-		$result = $this->connect()->execute($sql);
+		$result = self::db(static::$dbConfigName)
+						->insert(static::$tableName)
+						// ->bindValue($multiFieldsValues, TRUE)
+						// ->executeMulti();
+var_dump($result);exit;
 
-		var_dump($result);exit;
 	}
 
 	public function insertMulti(array $fields, array $values){
@@ -76,89 +94,115 @@ class CoreModel extends Db
 	}
 
 
-	public function update(array $fieldsValues,array $where){
-		if (empty($fieldsValues)) {
-			return TRUE;
-		}
-
-		$fieldsValues = [
-			'name'	=> 'tt',
-			'population' => 1
-		];
-
-		$where = [
-			'id >'		=> 20,
-			'population >'	=> 0
-		];
-
-		$sql = $this->sql()->updateAll('su_country_search')->set($fieldsValues);
-
-// var_dump($sql->getParam());
-// var_dump($sql->getSql());
-// var_dump($sql->getType());exit;
-
-		$result = $this->connect()->execute($sql);
-		var_dump($result);exit;
-	}
-
-// @todo 
-// 把链式操作结合在 connect()后，取消$this->sql()这个对象。
-// 同时把配置文件和模型的表名前缀结合在链式操作中去 (这个放在connnect这个方法里面操作，
-// 如果是控制器调用数据库操作比如 Db::connect()就不能加载模型的表名前缀，只能加载配置文件的)。
-
-	public function findOne($field = '', $where = array()){
-		if (empty($field) || !is_string($field)) {
+	public static function find(string $field = NULL, array $where = []){
+		if (empty($field)) {
 			$field = '*';
 		}
-$result = $result2 = '';
-		// $sql = $this->sql();
 
-		// $sql->select($field)
-		// 	->from($this->tableName)
-		// 	->where(['id <'=>10, 'population >'=> 0]);
-
-		// // var_dump($sql->getParam());
-		// // var_dump($sql->getSql());
-		// // var_dump($sql->getType());
-
-		// $result = $this->connect()->execute($sql)->all();
-
-		$result = $this->db()
-					 ->select('*')
-					 ->from($this->tableName)
-					 ->where(['id <'=>10, 'population >'=> 0])
-					 ->execute()
-					 ->all();
-
-
-
-		// $result2= $this->con()->execute('select * from pre_country where id>:id1 or id =:id2 limit 2', [':id1' => 15, ':id2' => 2])->all();
-
-			 // ->execute() //把这个函数封装在sql里面，同时要执行pdo的操作
-			 // ->all();
-			 
-		// var_dump($result->getParam());
-		// var_dump($result->getSql());
-		// var_dump($result->getType());
-
-var_dump($result);exit;
+		$result = self::db(static::$dbConfigName)
+						->select($field)
+						->from(static::$tableName)
+						->where($where)
+						->execute()
+						->all();
+		return $result;
 	}
 
 
-	public function delete($where){
+	public static function findOne(string $field = NULL, $where = array()){
+		if (empty($field)) {
+			$field = '*';
+		}
+
+		$result = self::db(static::$dbConfigName)
+						->select($field)
+						->from(static::$tableName)
+						->where($where)
+						->limit(1)
+						->execute()
+						->one();
+		return $result;
+	}
+
+
+	public static function deleteByPk($pkValue){
+		$pkValue = intval($pkValue);
+
+		if (empty($pkValue)) {
+			return FALSE;
+		}
+
+		$result = self::db(static::$dbConfigName)
+						->delete()
+						->from(static::$tableName)
+						->where([static::$pk => $pkValue])
+						->limit(1)
+						->execute();
+		return $result;					
+	}
+
+
+	public static function delete(array $where){
 		if (empty($where)) {
 			return FALSE;
 		}
 
-		$sql = $this->sql()->delete()->from($this->tableName)->where($where);
-
-		$result = $this->connect()->execute($sql);
-
-		var_dump($sql->getParam());
-		var_dump($sql->getSql());
-		var_dump($sql->getType());
-var_dump($result);exit;
+		$result = self::db(static::$dbConfigName)
+						->delete()
+						->from(static::$tableName)
+						->where($where)
+						->execute();
+		return $result;
 	}
+
+
+	public static function updateByPk($pkValue, array $fieldsValues){
+		$pkValue = intval($pkValue);
+
+		if (empty($pkValue)) {
+			return FALSE;
+		}
+
+		if (empty($fieldsValues)) {
+			return FALSE;
+		}
+
+		$result = self::db(static::$dbConfigName)
+						->update(static::$tableName)
+						->set($fieldsValues)
+						->where([static::$pk => $pkValue])
+						->execute();
+		return $result;
+	}
+
+
+	public static function update(array $fieldsValues, array $where){
+		if (empty($fieldsValues)) {
+			return FALSE;
+		}
+
+		if (empty($where)) {
+			return FALSE;
+		}
+
+		$result = self::db(static::$dbConfigName)
+						->update(static::$tableName)
+						->set($fieldsValues)
+						->where($where)
+						->execute();
+		return $result;
+	}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
