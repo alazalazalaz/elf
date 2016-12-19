@@ -22,11 +22,14 @@ class Result
 
 	private $result 	= '';
 
+	private $debug 		= FALSE;
+
 
 	function __construct($pdo, $sqlObj, $sth){
 		$this->sql 		= $sqlObj->getSql();
 		$this->sqlType 	= $sqlObj->getType();
 		$this->param 	= $sqlObj->getParam();
+		$this->debug 	= $sqlObj->getDebug();
 		$this->sth 		= $sth;
 		$this->pdo 		= $pdo;
 
@@ -34,6 +37,9 @@ class Result
 
 
 	public function returnDefaultResult(){
+		if ($this->debug) {
+			$this->debug();
+		}
 
 		switch ($this->sqlType) {
 			case Sql::INSERT:
@@ -87,6 +93,24 @@ class Result
 			}
 		}
 		return [];
+	}
+
+
+	private function debug(){
+		echo '<br>SQL TYPE:';
+		echo '<pre>';
+		print_r($this->sqlType);
+		echo '</pre>';
+
+		echo '<br>SQL:';
+		echo '<pre>';
+		print_r($this->sql);
+		echo '</pre>';
+
+		echo '<br>SQL PARAM:';
+		echo '<pre>';
+		print_r($this->param);
+		echo '</pre>';
 	}
 
 }

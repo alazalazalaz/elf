@@ -103,8 +103,23 @@ class MysqlPdo implements DriverInterface
 	}
 
 
-	public function insertMulti(){
+	public function executeMulti($sqlObj){
+		$sql 	= $sqlObj->getSql();
+		$param 	= $sqlObj->getParam();
 
+		if (empty($sql)) {
+			throw new CommonException("$sqlObj对象中获取sql语句失败", 1);	
+		}
+
+		$sth = self::prepare($sql, $param);
+
+		foreach ($param as $key => $value) {
+			$sth->bindValue($value);
+			$sth->execute();
+			$lastIdArr[] = $this->getPdo()->lastInsertId();
+		}		
+
+		return $lastIdArr;
 	}
 
 
@@ -116,6 +131,33 @@ class MysqlPdo implements DriverInterface
 			log::write('ERROR:	' . $e->getMessage() . "\r\nSQL:	" . $sql . "\r\nPARAM:	" . var_export($param, TRUE), 3, 'errorSql');
 			//@todo判断是否设置debug模式，如果有，则抛出异常，否则返回FALSE
 			throw new PDOException($e->getMessage() . '  <br>ERROR SQL:' . $sql, 1);
+		}
+	}
+
+
+	public function begin(){
+		try {
+			$this->getPdo()->beginTransaction();
+		} catch (PDOException $e) {
+			throw new PDOException($e->getMessage(), 1);
+		}
+	}
+
+
+	public function commit(){
+		try {
+			$this->getPdo()->commit();
+		} catch (PDOException $e) {
+			throw new PDOException($e->getMessage(), 1);
+		}
+	}
+
+
+	public function rollback(){
+		try {
+			$this->getPdo()->rollback();
+		} catch (PDOException $e) {
+			throw new PDOException($e->getMessage(), 1);
 		}
 	}
 

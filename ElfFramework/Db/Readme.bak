@@ -47,22 +47,14 @@ PDO::exec() 不会从一条 SELECT 语句中返回结果。对于在程序中只
 
 
 
-
-//my test function
-$select = 'select * from country limit 2';
-		$insert = 'insert into country (name,population) values (3,3)';
-		$update = 'update country set population=1 where id=2';
-		$delete = 'delete from country where id=10';
-
-		$resultSelect = $this->_con->query($select);
-		$resultInsert = $this->_con->query($insert);
-		$resultUpdate = $this->_con->query($update);
-		$resultDelete = $this->_con->query($delete);
-
-// var_dump($resultSelect, $resultInsert, $resultUpdate, $resultDelete);exit;
-
-		var_dump($resultSelect->rowCount());
-		var_dump($resultInsert->rowCount());
-		var_dump($resultUpdate->rowCount());
-		var_dump($resultDelete->rowCount());
-		exit;
+eg1:
+$result = Database::db('test')
+					->select('*')
+					->from('country')
+					->where(['id >=' => 35])
+					->execute()
+					->all('id');
+$result = Database::db('test')
+					->execute('select * from pre_country where id >= :id', [':id' => 35])
+					->all('id');
+上面两个方法等效

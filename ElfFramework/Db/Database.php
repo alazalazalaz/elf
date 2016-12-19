@@ -23,7 +23,7 @@ class Database
 
 
 	/**
-	 * 返回sql对象，也就是链式查询的句柄
+	 * 每次返回一个新的sql对象，也就是链式查询的句柄
 	 * @param  string $dbConfigName database.php数据库配置名称，默认为default
 	 * @return sqlObj               详见ElfFramework\Db\SqlBuilder\Sql类
 	 */
@@ -53,7 +53,7 @@ class Database
 		$dbConfig = self::loadDbConfig($dbConfigName);
 
 		//2.返回db驱动对象(根据config中class的配置返回各种驱动对象，各种驱动的方法都遵循driverInterface接口)
-		$driverObj = Container::createObject($dbConfig['class'], $dbConfig);
+		$driverObj = Container::createObject($dbConfig['class'], [$dbConfig]);
 		$driverObj->connect();
 
 		return $driverObj;

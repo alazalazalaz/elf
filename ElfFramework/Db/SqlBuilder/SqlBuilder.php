@@ -6,7 +6,6 @@ namespace ElfFramework\Db\SqlBuilder;
 use ElfFramework\Exception\CommonException;
 use ElfFramework\Db\SqlBuilder\Sql;
 use ElfFramework\Db\SqlBuilder\BuilderHelper;
-use ElfFramework\Db\SqlBuilder\BindValue;
 
 class SqlBuilder
 {
@@ -27,10 +26,17 @@ class SqlBuilder
 		'sets'		=> "SET %s",
 		'values'	=> "%s VALUES %s",
 		'from'		=> "FROM %s",
+		'leftJoin'  => 'LEFT JOIN %s',
+		'rightJoin' => 'RIGHT JOIN %s',
+		'innerJoin' => 'INNER JOIN %s',
+		'on'		=> 'ON %s',
 		'where'		=> "WHERE %s",
 		'and'		=> "AND %s",
 		'order'		=> 'ORDER BY %s',
-		'limit'		=> 'LIMIT %s'
+		'group'		=> 'GROUP BY %s',
+		'having'	=> 'HAVING %s',
+		'limit'		=> 'LIMIT %s',
+		'onUpdate'  => 'ON DUPLICATE KEY UPDATE %s'
 	];
 
 
@@ -68,61 +74,70 @@ class SqlBuilder
 
 
 	private function _selectSql(){
-		$this->buildSelect();
+		$this->_buildSelect();
 		
-		$this->buildFrom();
+		$this->_buildFrom();
 
-		$this->buildWhere();
+		$this->_buildJoin();
 
-		$this->buildOrder();
+		$this->_buildWhere();
 
-		$this->buildLimit();
+		$this->_buildGroup();
+
+		$this->_buildHaving();
+
+		$this->_buildOrder();
+
+		$this->_buildLimit();
 	}
 
 
 	private function _insertSql(){
-		$this->buildInsert();
+		$this->_buildInsert();
 
-		$this->buildValues();
+		$this->_buildValues();
+
+		$this->_buildOnUpdate();
 	}
 
 
 	private function _updateSql(){
-		$this->buildUpdate();
+		$this->_buildUpdate();
 
-		$this->buildSets();
+		$this->_buildSets();
 
-		$this->buildValues();
+		// $this->_buildValues();
 
 		if ($this->sqlObj->part['update']) {
-			if (!$this->buildWhere()) {
+			if (!$this->_buildWhere()) {
 				throw new CommonException('sql build错误，update语句必须加where条件，若要修改全部请使用updateAll()方法。', 1);
 			}
 		}elseif ($this->sqlObj->part['updateAll']) {
-			$this->buildWhere();
+			$this->_buildWhere();
 		}
 
-		$this->buildLimit();
+		$this->_buildLimit();
 	}
 
 
 	private function _deleteSql(){
 		$this->buildDelete();
 
-		$this->buildFrom();
+		$this->_buildFrom();
 
 		if ($this->sqlObj->part['delete']) {
-			if (!$this->buildWhere()) {
+			if (!$this->_buildWhere()) {
 				throw new CommonException('sql build错误，delete语句必须加where条件，若要删除全部请使用deleteAll()方法。', 1);
 			}
 		}elseif ($this->sqlObj->part['deleteAll']) {
-			$this->buildWhere();
+			$this->_buildWhere();
 		}
 
+		$this->_buildLimit();
 	}
 
 
-	public function buildSelect(){
+	private function _buildSelect(){
 		$select = $this->sqlObj->part['select'];
 		if (empty($select)) {
 			return ;
@@ -132,7 +147,7 @@ class SqlBuilder
 	}
 
 
-	public function buildFrom(){
+	private function _buildFrom(){
 		$from 	= $this->sqlObj->part['from'];
 		$prefix = $this->sqlObj->part['tablePrefix'];
 		if (empty($from)) {
@@ -143,12 +158,12 @@ class SqlBuilder
 	}
 
 
-	public function buildCount(){
+	private function buildCount(){
 
 	}
 
 
-	public function buildInsert(){
+	private function _buildInsert(){
 		$insert 	= $this->sqlObj->part['insert'];
 
 		$prefix = $this->sqlObj->part['tablePrefix'];
@@ -160,7 +175,7 @@ class SqlBuilder
 	}
 
 
-	public function buildSets(){
+	private function _buildSets(){
 		$sets 	= $this->sqlObj->part['sets'];
 		if (empty($sets)) {
 			return ;
@@ -170,7 +185,7 @@ class SqlBuilder
 	}
 
 
-	public function buildValues(){
+	private function _buildValues(){
 		$values 	= $this->sqlObj->part['values'];
 		if (empty($values)) {
 			return ;
@@ -184,7 +199,7 @@ class SqlBuilder
 	}
 
 
-	public function buildUpdate(){
+	private function _buildUpdate(){
 		$update 	= empty($this->sqlObj->part['update']) ? $this->sqlObj->part['updateAll'] : $this->sqlObj->part['update'];
 
 		$prefix = $this->sqlObj->part['tablePrefix'];
@@ -196,13 +211,13 @@ class SqlBuilder
 	}
 
 
-	public function buildDelete(){
+	private function buildDelete(){
 
 		$this->_sqlParts[] = sprintf($this->init['delete']);
 	}
 
 
-	public function buildWhere(){
+	private function _buildWhere(){
 		$where 	= $this->sqlObj->part['where'];
 
 		if (!empty($where)) {
@@ -214,7 +229,29 @@ class SqlBuilder
 	}
 
 
-	public function buildOrder(){
+	private function _buildGroup(){
+		$group 	= $this->sqlObj->part['group'];
+
+		if (!empty($group)) {
+			$this->_sqlParts[] = sprintf($this->init['group'], $group);	
+		}
+
+		return $this;
+	}
+
+
+	private function _buildHaving(){
+		$having 	= $this->sqlObj->part['having'];
+
+		if (!empty($having)) {
+			$this->_sqlParts[] = sprintf($this->init['having'], $having);	
+		}
+
+		return $this;
+	}
+	
+
+	private function _buildOrder(){
 		$order 	= $this->sqlObj->part['order'];
 
 		if (!empty($order)) {
@@ -225,7 +262,7 @@ class SqlBuilder
 	}
 
 
-	public function buildLimit(){
+	private function _buildLimit(){
 		$limit 	= $this->sqlObj->part['limit'];
 
 		if (!empty($limit)) {
@@ -234,6 +271,55 @@ class SqlBuilder
 
 		return $this;	
 	}
+
+
+	private function _buildJoin(){
+		$join 	= $this->sqlObj->part['join'];
+		$on 	= $this->sqlObj->part['on'];
+
+		if (empty($join) || empty($on)) {
+			return ;
+		}
+
+		if (!is_array($join) || !is_array($on)) {
+			return ;
+		}
+
+		foreach ($join as $key => $value) {
+			$tableFullName = $this->sqlObj->part['tablePrefix'] . $value['tableName'];
+			switch ($value['joinType']) {
+				case 'lj':
+					$this->_sqlParts[] = sprintf($this->init['leftJoin'], $tableFullName);
+					break;
+				case 'rj':
+					$this->_sqlParts[] = sprintf($this->init['rightJoin'], $tableFullName);
+					break;
+				case 'ij':
+					$this->_sqlParts[] = sprintf($this->init['innerJoin'], $tableFullName);
+					break;
+				
+				default:
+					throw new CommonException('sql build错误，join语句暂时只支持leftJoin, rightJoin, innerJoin三种类型', 1);
+					break;
+			}
+					
+			$this->_sqlParts[] = sprintf($this->init['on'], $on[$key]);
+		}
+		
+	}
+
+
+	private function _buildOnUpdate(){
+		$sets 	= $this->sqlObj->part['onUpdate'];
+
+		if (empty($sets)) {
+			return ;
+		}
+
+		$this->_sqlParts[] = sprintf($this->init['onUpdate'], $sets);
+
+	}
+
 
 
 	private function setSql(){

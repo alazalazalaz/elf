@@ -10,38 +10,10 @@ class BindValue
 	
 	private static $bindValue = [];
 
-	public static function setBindValue($label, $value, $symbol){
+	public static function setBindValue($label, $value){
 		
-		$normalSymbol = ['=', '!=', '>=', '<=', '>', '<', 'like', 'not like'];
-		if (in_array($symbol, $normalSymbol)) {
-
-			self::$bindValue[] = ['column'=> $label, 'value' => $value];
-
-		}elseif ($symbol == 'between' || $symbol == 'not between') {
-
-			if (!is_array($value) || count($value)<2) {
-				throw new CommonException('sql拼接错误，between函数必须包含两个参数', 1);
-			}
-			self::$bindValue[] = ['column'=> $label . '_start', 'value' => $value[0]];
-			self::$bindValue[] = ['column'=> $label . '_end', 'value' => $value[1]];
-
-		}
-
-		// elseif ($symbol == 'like' || $symbol == 'not like') {
-
-		// 	self::$bindValue[] = ['column'=> ':' . $column, 'value' => '%' . $value . '%'];
-
-		// }
-
-		// elseif ($symbol == 'left like') {
-
-		// 	self::$bindValue[] = ['column'=> ':' . $column, 'value' => '%' . $value];
-
-		// }elseif ($symbol == 'right like') {
-
-		// 	self::$bindValue[] = ['column'=> ':' . $column, 'value' => $value . '%'];
-			
-		// }
+		self::$bindValue[] = ['column'=> $label, 'value' => $value];
+		
 	}
 
 
@@ -59,8 +31,6 @@ class BindValue
 					self::$bindValue[] = $tmp;
 				}
 			}
-
-			var_dump(self::getBindValue());exit;
 		}else{
 			foreach ($keyValueArray as $column => $value) {
 				self::$bindValue[] = ['column'=> $column, 'value' => $value];

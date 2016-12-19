@@ -16,4 +16,10 @@ class AppModel extends Model
 
 	public static $pk 			= 'id';
 
+
+	public function __construct(){
+
+
+	}
+
 }

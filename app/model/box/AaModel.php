@@ -2,15 +2,22 @@
 /**
 * app model
 */
-namespace app\model;
-use ElfFramework\Model\Model;
+namespace app\model\box;
+use app\model\AppModel;
 
-class AaModel extends Model
+class AaModel extends AppModel
 {
+	public static $dbConfigName = 'test';
+
+	public static $tablePrefix  = '';
+
+	public static $tableName 	= 'country';
+
+	public static $pk 			= '3';
 	
 	function __construct()
 	{
-		echo 'im model';
+		
 	}
 
 

@@ -12,42 +12,57 @@ use ElfFramework\Config\ConfigHandle\Config;
 class CoreModel extends Db
 {
 	/**
-	 * 数据库配置名称
+	 * 数据库配置名称(可选)
 	 * @var string
 	 */
 	public static $dbConfigName 	= 'default';
 	
 	/**
-	 * 数据库表名前缀
+	 * 数据库表名前缀(可选)
 	 */
 	public static $tablePrefix 		= '';
 
 	/**
-	 * 数据库表名
+	 * 数据库表名(必须在model中声明)
 	 * @var string
 	 */
-	public static $tableName 		='';
+	public static $tableName 		= '';
 	
 	/**
-	 * 该表的主键
+	 * 该表的主键(可选)
 	 * @var string
 	 */
-	public static $pk 				= '';
+	public static $pk 				= 'id';
+
 
 	/**
-	 * 初始化db链接
+	 * 分页的条目数
+	 * @var integer
 	 */
+	public static $pageSize 		= 10;
+
+
 	function __construct(){
 		parent::__construct();
 	}
 
 
+	/**
+	 * 创建模型对象
+	 * eg: $modelObj = TestModel::factory($param1, $param2, $param3...);
+	 * @return object
+	 */
 	public static function factory(){
 
-		return Container::factory(get_called_class());
+		return Container::createObject(get_called_class(), func_get_args());
 	}
 
 
+	/**
+	 * 插入一条数据
+	 * @param  一维数组  $fieldsValues eg: $fieldsValues = ['name' => 'xxx', 'pw' => 'xxx'];
+	 * @return int       返回最后插入的ID
+	 */
 	public static function save(array $fieldsValues){
 		if (empty($fieldsValues)) {
 			return FALSE;
@@ -60,11 +75,18 @@ class CoreModel extends Db
 		return $result;
 	}
 
-@todo 
-方法：插入多条数据
-已修改的地方有:
-sql::bindValue()方法
-BindValue::setBindValuePure()方法
+
+	/**
+	 * 同时插入多条数据(这个方法真他么丑)
+	 * @param  二维数组 	$multiFieldsValues 
+	 * eg:
+	 * $multiFieldsValues = [
+			['code' => 111, 'name' => 'hi', 'population' => 1],
+			['code' => 333, 'name' => 'world', 'population' => 3]
+		];
+	 *
+	 * @return 一维数组 	返回最后插入的ID    
+	 */
 	public static function saveAll(array $multiFieldsValues){
 		if (empty($multiFieldsValues)) {
 			return FALSE;
@@ -72,35 +94,30 @@ BindValue::setBindValuePure()方法
 
 		$result = self::db(static::$dbConfigName)
 						->insert(static::$tableName)
-						// ->bindValue($multiFieldsValues, TRUE)
-						// ->executeMulti();
-var_dump($result);exit;
-
+						->values(current($multiFieldsValues))
+						->executeMulti($multiFieldsValues);
+		return $result;
 	}
 
-	public function insertMulti(array $fields, array $values){
-		// $fields = ['code', 'population'];
-		// $vlaues = [
-		// 	[111, 222],
-		// 	[333, 444]
-		// ];
-
-		// $sql = $this->sql()->insert($this->tableName)->valuesMulti($fields, $vlaues);
-
-	}
 
 	public function insertUpdate(){
 
 	}
 
 
-	public static function find(string $field = NULL, array $where = []){
-		if (empty($field)) {
-			$field = '*';
+	/**
+	 * 查询所有记录
+	 * @param  string|null $fields 待查询字段，$fields = '*'或者NULL表示查询所有
+	 * @param  array       $where 查询条件, eg: $where = ['id >' => 4, 'pw !=' => ''];
+	 * @return 二维数组或者空     返回所有结果
+	 */
+	public static function find($fields = NULL, array $where = []){
+		if (empty($fields) || !is_string($fields) ) {
+			$fields = '*';
 		}
 
 		$result = self::db(static::$dbConfigName)
-						->select($field)
+						->select($fields)
 						->from(static::$tableName)
 						->where($where)
 						->execute()
@@ -109,18 +126,61 @@ var_dump($result);exit;
 	}
 
 
-	public static function findOne(string $field = NULL, $where = array()){
-		if (empty($field)) {
-			$field = '*';
+	/**
+	 * 查询一条记录
+	 * @param  string|null $fields 待查询字段，$fields = '*'或者NULL表示查询所有
+	 * @param  array       $where 查询条件, eg: $where = ['id >' => 4, 'pw !=' => ''];
+	 * @return 一维数组或者空     返回所有结果
+	 */
+	public static function findOne($fields = NULL, $where = []){
+		if (empty($fields) || !is_string($fields) ) {
+			$fields = '*';
 		}
 
 		$result = self::db(static::$dbConfigName)
-						->select($field)
+						->select($fields)
 						->from(static::$tableName)
 						->where($where)
 						->limit(1)
 						->execute()
 						->one();
+		return $result;
+	}
+
+
+	/**
+	 * @todo 待修改或者废除
+	 * @param  [type] $fields [description]
+	 * @param  array  $where  [description]
+	 * @param  [type] $page   [description]
+	 * @return [type]         [description]
+	 */
+	public static function findByPage($fields = NULL, $where = [], $page){
+		if (empty($fields) || !is_string($fields) ) {
+			$fields = '*';
+		}
+
+		$result = self::db(static::$dbConfigName)
+						->select($fields)
+						->from(static::$tableName)
+						->where($where);
+
+						->execute()
+						->all();
+		return $result;
+	}
+
+
+	public static function delete(array $where){
+		if (empty($where)) {
+			return FALSE;
+		}
+
+		$result = self::db(static::$dbConfigName)
+						->delete()
+						->from(static::$tableName)
+						->where($where)
+						->execute();
 		return $result;
 	}
 
@@ -142,14 +202,18 @@ var_dump($result);exit;
 	}
 
 
-	public static function delete(array $where){
+	public static function update(array $fieldsValues, array $where){
+		if (empty($fieldsValues)) {
+			return FALSE;
+		}
+
 		if (empty($where)) {
 			return FALSE;
 		}
 
 		$result = self::db(static::$dbConfigName)
-						->delete()
-						->from(static::$tableName)
+						->update(static::$tableName)
+						->set($fieldsValues)
 						->where($where)
 						->execute();
 		return $result;
@@ -176,55 +240,15 @@ var_dump($result);exit;
 	}
 
 
-	public static function update(array $fieldsValues, array $where){
-		if (empty($fieldsValues)) {
-			return FALSE;
-		}
-
-		if (empty($where)) {
-			return FALSE;
-		}
-
+	public static function count(array $where = []){
 		$result = self::db(static::$dbConfigName)
-						->update(static::$tableName)
-						->set($fieldsValues)
+						->select('count(*)')
+						->from(static::$tableName)
 						->where($where)
-						->execute();
-		return $result;
+						->execute()
+						->one();
+		return isset($result['count(*)']) ? $result['count(*)'] : 0;
 	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-	public function execute($rowSql){
-
-		$result = $this->connect()->execute($rowSql)->all();
-
-		// var_dump($sql->getParam());
-		// var_dump($sql->getSql());
-		// var_dump($sql->getType());
-var_dump($result);exit;
-	}
-
-
-
-
-	public function query($sql){
-		if (empty($sql) || !is_string($sql)) {
-			return NULL;
-		}
-
-		return $this->connect()->query($sql);
-	}
 	
 }
