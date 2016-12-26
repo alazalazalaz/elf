@@ -20,7 +20,7 @@ use ElfFramework\Db\Database;
 class AaController extends AppController
 {
 	
-	public function test(){
+	public function actionTest(){
 		$id    = 13;
 		$field = 'id,name';
 		$where = ['id >'=> 6];
@@ -33,7 +33,7 @@ class AaController extends AppController
 		];
 
 		// $result = AppModel::findOne($where, $where);
-		// $result = AppModel::find($field, $where);
+		// $result = AppModel::find($field, $where, '');
 		// $result = AppModel::deleteByPk($id);
 		// $result = AppModel::delete($where);
 		// $result = AppModel::updateByPk($id, $fieldsValue);
@@ -84,13 +84,13 @@ class AaController extends AppController
 		// 					->execute()
 		// 					->all();
 
-		$result = Database::db('test')
-							->debug()
-							->delete()
-							->from('country')
-							->where(['id >' => 8])
-							->limit(1)
-							->execute();
+		// $result = Database::db('test')
+		// 					->debug()
+		// 					->delete()
+		// 					->from('country')
+		// 					->where(['id >' => 8])
+		// 					->limit(1)
+		// 					->execute();
 var_dump($result);exit;
 
 		// $sql = 'update country set population=1 where id=1';

@@ -17,7 +17,8 @@ class CoreRequest
 
 	CONST CONTROLLER_SUF 		= 'Controller';
 	CONST CONTROLLER_DEFAULT 	= 'index';
-	CONST ACTION_DEFAULT 		= 'index';
+	CONST ACTION_PRE 			= 'action';
+	CONST ACTION_DEFAULT 		= 'Index';
 
 	CONST URL_CONTROLLER_KEY 	= 'c';
 	CONST URL_ACTION_KEY 		= 'a';
@@ -101,6 +102,8 @@ class CoreRequest
 
 			self::$action = isset($param[self::URL_ACTION_KEY]) ? $param[self::URL_ACTION_KEY] : self::ACTION_DEFAULT;
 		}
+
+		self::$action = self::ACTION_PRE . self::$action;
 	}
 
 

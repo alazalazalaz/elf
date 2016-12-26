@@ -100,28 +100,73 @@ class CoreModel extends Db
 	}
 
 
-	public function insertUpdate(){
-
-	}
-
-
 	/**
 	 * 查询所有记录
 	 * @param  string|null $fields 待查询字段，$fields = '*'或者NULL表示查询所有
 	 * @param  array       $where 查询条件, eg: $where = ['id >' => 4, 'pw !=' => ''];
+	 * @param  string 
+	 * @param  string 
+	 * @param  int||array  eg:$limit = 1 或者 $limit = [1, 20] 或者 $limit = [1]
 	 * @return 二维数组或者空     返回所有结果
 	 */
-	public static function find($fields = NULL, array $where = []){
+	public static function find($fields = NULL, array $where = [], $order = '', $group = '', $limit = []){
 		if (empty($fields) || !is_string($fields) ) {
 			$fields = '*';
 		}
 
-		$result = self::db(static::$dbConfigName)
-						->select($fields)
-						->from(static::$tableName)
-						->where($where)
-						->execute()
-						->all();
+		$db = self::db(static::$dbConfigName);
+
+		$db->select($fields)->from(static::$tableName)->from(static::$tableName)->where($where);
+
+		if (!empty($order)) {
+			$db->order($order);
+		}
+
+		if (!empty($group)) {
+			$db->group($group);
+		}
+
+		if (!empty($limit)) {
+			if (is_array($limit)) {
+				if (isset($limit[0]) && isset($limit[1])) {
+					$db->limit($limit[0], $limit[1]);
+				}elseif (isset($limit[0])) {
+					$db->limit($limit[0]);
+				}
+			}else{
+				$db->limit($limit);
+			}
+		}
+
+		$result = $db->execute()->all();
+
+		return $result;
+	}
+
+
+	public static function findByPage($fields = NULL, array $where = [], $order = '', $group = '', $page = 1){
+		if (empty($fields) || !is_string($fields) ) {
+			$fields = '*';
+		}
+
+		$page = intval($page);
+
+		$db = self::db(static::$dbConfigName);
+
+		$db->select($fields)->from(static::$tableName)->from(static::$tableName)->where($where);
+
+		if (!empty($order)) {
+			$db->order($order);
+		}
+
+		if (!empty($group)) {
+			$db->group($group);
+		}
+
+		$db->limitPage(static::$pageSize, $page);
+
+		$result = $db->execute()->all();
+
 		return $result;
 	}
 
@@ -144,29 +189,6 @@ class CoreModel extends Db
 						->limit(1)
 						->execute()
 						->one();
-		return $result;
-	}
-
-
-	/**
-	 * @todo 待修改或者废除
-	 * @param  [type] $fields [description]
-	 * @param  array  $where  [description]
-	 * @param  [type] $page   [description]
-	 * @return [type]         [description]
-	 */
-	public static function findByPage($fields = NULL, $where = [], $page){
-		if (empty($fields) || !is_string($fields) ) {
-			$fields = '*';
-		}
-
-		$result = self::db(static::$dbConfigName)
-						->select($fields)
-						->from(static::$tableName)
-						->where($where);
-
-						->execute()
-						->all();
 		return $result;
 	}
 
@@ -249,6 +271,5 @@ class CoreModel extends Db
 						->one();
 		return isset($result['count(*)']) ? $result['count(*)'] : 0;
 	}
-
 	
 }
