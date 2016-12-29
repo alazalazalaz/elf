@@ -11,7 +11,7 @@ use PDOException;
 use ElfFramework\Db\Statement\PdoStatement;
 use ElfFramework\Db\Result\Result;
 use ElfFramework\Db\SqlBuilder\Sql;
-use ElfFramework\Lib\Log\Log;
+use ElfFramework\Lib\Log;
 
 class MysqlPdo implements DriverInterface
 {

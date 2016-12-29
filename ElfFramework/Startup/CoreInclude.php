@@ -39,3 +39,6 @@ require ELF_PATH . 'Domain/CoreDomain.php';
  */
 require ELF_PATH . 'Controller/CoreController.php';
 require ELF_PATH . 'Controller/Controller.php';
+
+require ELF_PATH . 'Lib/ConfigHandle/Config.php';
+

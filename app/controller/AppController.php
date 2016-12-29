@@ -4,13 +4,13 @@
 * 
 */
 namespace app\controller;
-use ElfFramework\Controller\Controller;
+use ElfFramework\Controller;
 
 class AppController extends Controller
 {
 	
-	private function test(){
-		
+	public function actiontest(){
+		echo 'test';
 	}
 
 	

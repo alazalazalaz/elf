@@ -2,7 +2,7 @@
 /**
 * cookie类
 */
-namespace ElfFramework\Lib\Cookie;
+namespace ElfFramework\Lib;
 use ElfFramework\Lib\Cookie\CoreCookie;
 
 class Cookie extends CoreCookie

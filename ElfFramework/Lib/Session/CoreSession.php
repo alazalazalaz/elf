@@ -6,7 +6,7 @@
 */
 namespace ElfFramework\Lib\Session;
 use ElfFramework\Exception\CommonException;
-use ElfFramework\Lib\Hash\Hash;
+use ElfFramework\Lib\Hash;
 
 class CoreSession
 {

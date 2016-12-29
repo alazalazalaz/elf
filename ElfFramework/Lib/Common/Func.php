@@ -2,7 +2,7 @@
 /**
 * 一些通用方法
 */
-namespace ElfFramework\Lib\Common;
+namespace ElfFramework\Lib;
 
 class Func
 {

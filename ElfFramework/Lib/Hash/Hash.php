@@ -2,7 +2,7 @@
 /**
 * hash类
 */
-namespace ElfFramework\Lib\Hash;
+namespace ElfFramework\Lib;
 use ElfFramework\Exception\CommonException;
 
 class Hash

@@ -3,11 +3,11 @@
 * model核心类(每张表是一个模型)
 */
 namespace ElfFramework\Model;
-use ElfFramework\Lib\Common\Container;
+use ElfFramework\Lib\Container;
 use ElfFramework\Exception\CommonException;
 use ElfFramework\Db\Db;
 use PDOException;
-use ElfFramework\Config\ConfigHandle\Config;
+use ElfFramework\Lib\Config;
 
 class CoreModel extends Db
 {

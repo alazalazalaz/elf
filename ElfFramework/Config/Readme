@@ -11,7 +11,7 @@ function:
 	ConfigHandle/Config.php
 
 	方法：
-	use ElfFramework\Config\ConfigHandle\Config;
+	use ElfFramework\Lib\Config;
 	
 	$result = Config::load('database');
 	1、读取配置文件名为database.php的文件，查找顺序为优先modules/xxx/Config/database.php再app/Config/database.php最后ElfFramework/Config/database.php，找到一个则停止。

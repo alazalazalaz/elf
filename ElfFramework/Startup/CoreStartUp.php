@@ -9,8 +9,8 @@ use ElfFramework\Autoload\CoreAutoload;
 use ElfFramework\Routing\CoreRouting;
 use ElfFramework\Routing\CoreRequest;
 use ElfFramework\Domain\CoreDomain;
-use ElfFramework\Config\ConfigHandle\Config;
-use ElfFramework\Lib\Common\Func;
+use ElfFramework\Lib\Config;
+use ElfFramework\Lib\Func;
 
 class CoreStartUp
 {

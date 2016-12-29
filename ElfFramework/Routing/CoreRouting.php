@@ -5,7 +5,6 @@
 namespace ElfFramework\Routing;
 use ReflectionClass;
 use ElfFramework\Exception\CommonException;
-use ElfFramework\Controller\CoreController;
 use ElfFramework\Domain\CoreDomain;
 
 class CoreRouting
@@ -24,11 +23,11 @@ class CoreRouting
 		$controller 	= CoreRequest::data('controller');
 		$action 		= CoreRequest::data('action');
 		$controllerPath = APP_NS . CoreRequest::data('controllerPath');
-
+		
 		$ref = new ReflectionClass($controllerPath);
 
 		//必须是controller的子类
-		if (!$ref->isSubclassOf('ElfFramework\\Controller\\Controller')) {
+		if (!$ref->isSubclassOf('ElfFramework\Controller')) {
 			throw new CommonException('控制器' . $controller . '必须是controller的子类');
 		}
 

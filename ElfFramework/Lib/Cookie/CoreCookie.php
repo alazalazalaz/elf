@@ -3,7 +3,7 @@
 * cookie核心类
 */
 namespace ElfFramework\Lib\Cookie;
-use ElfFramework\Config\ConfigHandle\Config;
+use ElfFramework\Lib\Config;
 use ElfFramework\Exception\CommonException;
 
 class CoreCookie

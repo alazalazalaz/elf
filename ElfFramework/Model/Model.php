@@ -2,7 +2,7 @@
 /**
 * model
 */
-namespace ElfFramework\Model;
+namespace ElfFramework;
 
 use ElfFramework\Model\CoreModel;
 

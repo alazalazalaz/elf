@@ -14,7 +14,7 @@ $sql = Database::db('test')			//这个test表示的是database.php文件里面ke
 
 方法2
 (只有在继承了Model的模型层才能调用)
-use ElfFramework\Model\Model;
+use ElfFramework\Model;
 $sql = $this->db('test')			//这个test表示的是database.php文件里面key为test的配置，配置里面决定了库名和表前缀
 
 

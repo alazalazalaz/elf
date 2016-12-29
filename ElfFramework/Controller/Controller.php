@@ -3,11 +3,11 @@
 /**
 * 控制器
 */
-namespace ElfFramework\Controller;
+namespace ElfFramework;
 use ElfFramework\Controller\CoreController;
 
 class Controller extends CoreController
 {
-	
+
 	
 }

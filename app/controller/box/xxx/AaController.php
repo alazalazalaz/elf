@@ -5,22 +5,29 @@
 */
 namespace app\controller\box\xxx;
 use app\controller\AppController;
-use ElfFramework\Lib\Log\Log;
-use ElfFramework\Lib\Common\Func;
-use ElfFramework\Lib\Cookie\Cookie;
-use ElfFramework\Lib\Session\Session;
-use ElfFramework\Lib\Hash\Hash;
-use ElfFramework\Routing\CoreRequest;
-use ElfFramework\Model\Model;
-use ElfFramework\Config\ConfigHandle\Config;
+
+use ElfFramework\Lib\Log;
+use ElfFramework\Lib\Func;
+use ElfFramework\Lib\Cookie;
+use ElfFramework\Lib\Session;
+use ElfFramework\Lib\Hash;
+use ElfFramework\Lib\Request;
+use ElfFramework\Lib\Config;
+use ElfFramework\Model;
+use ElfFramework\Db\Database;
+
 use app\model\AppModel;
 use app\model\box\AaModel;
-use ElfFramework\Db\Database;
+
+use app\lib\zip;
 
 class AaController extends AppController
 {
-	
+
 	public function actionTest(){
+
+		new zip();
+
 		$id    = 13;
 		$field = 'id,name';
 		$where = ['id >'=> 6];
@@ -33,7 +40,7 @@ class AaController extends AppController
 		];
 
 		// $result = AppModel::findOne($where, $where);
-		// $result = AppModel::find($field, $where, '');
+		$result = AppModel::find($field, $where, '');
 		// $result = AppModel::deleteByPk($id);
 		// $result = AppModel::delete($where);
 		// $result = AppModel::updateByPk($id, $fieldsValue);
@@ -91,23 +98,10 @@ class AaController extends AppController
 		// 					->where(['id >' => 8])
 		// 					->limit(1)
 		// 					->execute();
-var_dump($result);exit;
+var_dump($result);
 
-		// $sql = 'update country set population=1 where id=1';
-		$sql = 'select * from countdry';
-
-		$model = AppModel::factory();
-		$model->findOne();
-		// $model->insert([]);
-		// $model->update(['code'=>23], ['id'=>6]);
-		// $model->delete(['id > ' => 29]);
-		// $model->execute('select * from country limit 2');
-		// $data = $model->query($sql);
-
-		echo '<pre>';
-		var_dump($data);
-		// print_r($model);
-		echo '</pre>';exit;
+		$this->set('name', 'xxx');
+		$this->view('index');
 
 	}
 	

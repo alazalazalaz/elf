@@ -6,14 +6,18 @@
 */
 namespace ElfFramework\Autoload;
 use ElfFramework\Exception\CommonException;
+use ElfFramework\Lib\Config;
 
 class CoreAutoload
 {
-	private static $classMap 	= array();
-
+	private static $autoloadClassMap 	= array();
 	
 	public function __construct(){
-		self::$classMap = require 'AutoloadClassMap.php';
+		self::$autoloadClassMap = require 'AutoloadClassMap.php';
+		$usersClassMap 		= Config::load('classMap');
+		if (!empty($usersClassMap)) {
+			self::$autoloadClassMap = array_merge(self::$autoloadClassMap, $usersClassMap);
+		}
 	}
 
 
@@ -23,34 +27,41 @@ class CoreAutoload
 
 
 	private function loadClass($namespaceClassName){
-		
-		$fileFullPath 	= $this->getFilePathByNs($namespaceClassName);
-		
+	var_dump($namespaceClassName);		
+		if (isset(self::$autoloadClassMap[$namespaceClassName])) {
+			echo '<br>elf class map';
+			require self::$autoloadClassMap[$namespaceClassName];
+			return TRUE;
+		}
+
+
+		$fileFullPath 	= ROOT_PATH . str_replace(DS, '\\', $namespaceClassName) . EXT;
 		if (file_exists($fileFullPath)) {
+			echo '<br>auto find';
 			require $fileFullPath;
 			return TRUE;
 		}
 
-		if (isset(self::$classMap[$namespaceClassName])) {
-			require self::$classMap[$namespaceClassName];
-			return TRUE;
-		}
+		echo 'others =====';
+
+		//注释掉抛出异常，让程序继续跑，因为有可能其他vendor里面有注册自动加载功能。比如smarty。spl_autoload_register按照调用先后顺序，依次执行注册的函数。
 		// throw new CommonException('目录：' . $fileFullPath . ' 找不到该文件。');
 
 	}
 
 
-	private function getFilePathByNs($namespaceClassName){
-		$array 	= explode('\\', $namespaceClassName);
-		$array  = array_filter($array);
-		$firstNs= array_shift($array);
+	// private function getFilePathByNs($namespaceClassName){
+	// 	return ROOT_PATH . str_replace(DS, '\\', $namespaceClassName) . EXT;
+	// 	// $array 	= explode('\\', $namespaceClassName);
+	// 	// $array  = array_filter($array);
+	// 	// $firstNs= array_shift($array);
 
-		if ($firstNs == 'ElfFramework') {
-			return ELF_PATH . implode(DS, $array) . EXT;
-		}else{
-			return ROOT_PATH . str_replace(DS, '\\', $namespaceClassName) . EXT;
-		}
-	}
+	// 	// if ($firstNs == 'ElfFramework') {
+	// 	// 	return ELF_PATH . implode(DS, $array) . EXT; //这个判断可以去掉@todo
+	// 	// }else{
+	// 	// 	return ROOT_PATH . str_replace(DS, '\\', $namespaceClassName) . EXT;
+	// 	// }
+	// }
 
 
 }

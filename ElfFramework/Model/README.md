@@ -36,7 +36,7 @@ function:
 	CoreModel
 
 	方法：
-	use ElfFramework\Model\Model;
+	use ElfFramework\Model;
 
 	Model::factory($param1, $param2, $param3...);
 	作用：
@@ -119,8 +119,9 @@ $insertValueMulti = [
 
 
 $result = Model::factory();
-$result = Model::findOne($field, $where);
+$result = Model::findOne($field, $where, $order, $group, $limit = []);
 $result = Model::find($field, $where);
+$result = Model::findByPage($field, $where, $order, $group, $page);
 $result = Model::deleteByPk($id);
 $result = Model::delete($where);
 $result = Model::updateByPk($id, $fieldsValue);

@@ -4,9 +4,9 @@
 */
 namespace modules\bbs\controller;
 use modules\bbs\controller\AppController;
-use ElfFramework\Lib\Log\Log;
-use ElfFramework\Lib\Cookie\Cookie;
-use ElfFramework\Lib\Session\Session;
+use ElfFramework\Lib\Log;
+use ElfFramework\Lib\Cookie;
+use ElfFramework\Lib\Session;
 
 class WelcomeController extends AppController
 {

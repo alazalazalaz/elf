@@ -6,10 +6,10 @@
 
 namespace ElfFramework\Db;
 
-use ElfFramework\Config\ConfigHandle\Config;
+use ElfFramework\Lib\Config;
 use ElfFramework\Exception\CommonException;
 use ElfFramework\Db\Driver\Mysql\Pdo;
-use ElfFramework\Lib\Common\Container;
+use ElfFramework\Lib\Container;
 use ElfFramework\Db\SqlBuilder\Sql;
 
 class Database

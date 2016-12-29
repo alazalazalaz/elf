@@ -3,7 +3,7 @@
 /**
 * 存放单例、hash对象
 */
-namespace ElfFramework\Lib\Common;
+namespace ElfFramework\Lib;
 use ReflectionClass;
 
 class Container
@@ -37,14 +37,14 @@ class Container
 		}
 
 		$objectKey = empty($param) ? substr(md5($className), 0, 10) : substr(md5($className . serialize($param)), 0, 10);
-$testStr = '<br>no create';
+$testStr = '<br>no create ' . $className;
 		if (!isset(self::$_reflections[$objectKey])) {
 			$ref = new ReflectionClass($className);
 			if (empty($param)) {
-				$testStr = '<br>create instance';
+				$testStr = '<br>create instance' . $className;
 				self::$_reflections[$objectKey] 	= $ref->newInstance();
 			}else{
-				$testStr = '<br>create instance with param';
+				$testStr = '<br>create instance ' . $className . ' with param';
 				self::$_reflections[$objectKey] 	= $ref->newInstanceArgs($param);
 			}
 		}

@@ -7,7 +7,7 @@
 namespace ElfFramework\Exception;
 
 use Exception;
-use ElfFramework\Lib\Common\Func;
+use ElfFramework\Lib\Func;
 
 class CommonException extends Exception
 {

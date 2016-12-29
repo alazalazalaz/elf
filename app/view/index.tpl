@@ -1,1 +1,1 @@
-im i ndex.tpl{$name}
+im i ndex.tpl<{$name}>

@@ -3,10 +3,10 @@
 * 读取配置文件类
 * 暂时只支持配置文件为数组的格式
 */
-namespace ElfFramework\Config\ConfigHandle;
+namespace ElfFramework\Lib;
 
 use ElfFramework\Domain\CoreDomain;
-use ElfFramework\Config\ConfigHandle\ConfigArray;
+use ElfFramework\Lib\ConfigArray;
 use ElfFramework\Exception\CommonException;
 
 class Config
@@ -41,7 +41,7 @@ class Config
 	
 
 	/**
-	 * 1,查找子域名的配置
+	 * 1,如果是子域名，查找子域名的配置
 	 * 2,查找app项目的配置
 	 * 3,查找系统的配置
 	 */

@@ -6,8 +6,6 @@ namespace ElfFramework\View;
 use ElfFramework\Exception\CommonException;
 use ElfFramework\View\ViewInterface;
 
-require ELF_PATH . 'Vendor' . DS . 'Smarty' . DS . 'Libs' . DS . "Smarty.class.php";
-
 class SmartyView implements ViewInterface
 {
 
@@ -22,8 +20,8 @@ class SmartyView implements ViewInterface
 		$this->_smarty->compile_dir 		= APP_PATH . 'data' . DS . 'smarty' . DS . 'templates_c' . DS;
 		$this->_smarty->cache_dir 			= APP_PATH . 'data' . DS . 'smarty' . DS . 'cache' . DS;
 		$this->_smarty->config_dir 			= '';
-		$this->_smarty->left_delimiter 		= '{';
-		$this->_smarty->right_delimiter 	= '}';
+		$this->_smarty->left_delimiter 		= '<{';
+		$this->_smarty->right_delimiter 	= '}>';
 		$this->_smarty->force_compile 		= FALSE;
 		$this->_smarty->caching 			= FALSE;
 		$this->_smarty->cache_lifetime 		= 3600;

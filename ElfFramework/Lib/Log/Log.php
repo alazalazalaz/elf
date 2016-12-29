@@ -3,7 +3,7 @@
 /**
 * 日志类
 */
-namespace ElfFramework\Lib\Log;
+namespace ElfFramework\Lib;
 use ElfFramework\Exception\CommonException;
 use ElfFramework\Routing\CoreRequest;
 
