@@ -20,6 +20,7 @@ class CommonException extends Exception
 
 
 	public function exceptionHandle(Exception $e){
+		// ob_clean();
 		//这里判断是否有定义开启debug等，如果没有，则返回error 500错误。
 		
 	 	$msg 		= $e->getMessage();
@@ -28,11 +29,13 @@ class CommonException extends Exception
 	 	$line 		= $e->getLine();
 
 		$this->_displayError($msg, $traceList, $file, $line);
+		exit;
 	}
 
 
 	public function errorHandle($errNo, $errMessage, $errFile, $errLine, $errContext = ''){
-
+		// ob_clean();
+		
 		list($errorLevel, $logLevel) 	= self::_mapErrorCode($errNo);
 		$msg 		= $errMessage;
 	 	$traceList 	= array();
@@ -40,15 +43,18 @@ class CommonException extends Exception
 	 	$line 		= $errLine;
 
 		$this->_displayError($msg, $traceList, $file, $line, 'error', $errorLevel);
+		exit;
 	}
 
 
 	public function shutdownHandle(){
 var_dump(Func::getMemUse());
+
 		$lastError = error_get_last();
 		if ($lastError) {
 			// ob_get_level() and ob_clean();
 			$this->errorHandle($lastError['type'], $lastError['message'], $lastError['file'], $lastError['line']);
+			exit;
 		}
 	}
 

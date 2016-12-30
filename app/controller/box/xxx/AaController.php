@@ -12,6 +12,7 @@ use ElfFramework\Lib\Cookie;
 use ElfFramework\Lib\Session;
 use ElfFramework\Lib\Hash;
 use ElfFramework\Lib\Request;
+use ElfFramework\Lib\Response;
 use ElfFramework\Lib\Config;
 use ElfFramework\Model;
 use ElfFramework\Db\Database;
@@ -39,8 +40,11 @@ class AaController extends AppController
 			['code' => 333, 'name' => 'world', 'population' => 3]
 		];
 
+		Response::header('Cache-Control', 'no-cache, must-revalidate');
+		Response::headerByCode(500);
+
 		// $result = AppModel::findOne($where, $where);
-		$result = AppModel::find($field, $where, '');
+		// $result = AppModel::find($field, $where, '');
 		// $result = AppModel::deleteByPk($id);
 		// $result = AppModel::delete($where);
 		// $result = AppModel::updateByPk($id, $fieldsValue);
@@ -98,11 +102,13 @@ class AaController extends AppController
 		// 					->where(['id >' => 8])
 		// 					->limit(1)
 		// 					->execute();
-var_dump($result);
+// var_dump($result);
 
-		$this->set('name', 'xxx');
-		$this->view('index');
+		// $this->set('name', 'xxx');
+		// $this->view('index');
 
+// @todo 使用flush来关闭xdebug
+// var_dump(xdebug_memory_usage(), xdebug_peak_memory_usage());exit;
 	}
 	
 

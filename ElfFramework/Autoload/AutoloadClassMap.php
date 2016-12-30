@@ -41,11 +41,13 @@ return array(
 	'ElfFramework\Lib\Hash'				=> ELF_PATH . 'Lib/Hash/Hash.php',
 	'ElfFramework\Lib\Log'				=> ELF_PATH . 'Lib/Log/Log.php',
 	'ElfFramework\Lib\Request'			=> ELF_PATH . 'Routing/Request.php',
+	'ElfFramework\Lib\Response'			=> ELF_PATH . 'Routing/Response.php',
 
 	'ElfFramework\Model'				=> ELF_PATH . 'Model/Model.php',
 
 
 	'ElfFramework\Routing\CoreRequest'	=> ELF_PATH . 'Routing/CoreRequest.php',
+	'ElfFramework\Routing\CoreResponse'	=> ELF_PATH . 'Routing/CoreResponse.php',
 	'ElfFramework\Routing\CoreRouting'	=> ELF_PATH . 'Routing/CoreRouting.php',
 
 

@@ -27,6 +27,9 @@ require ELF_PATH . 'Exception/CommonException.php';
  */
 require ELF_PATH . 'Routing/CoreRouting.php';
 require ELF_PATH . 'Routing/CoreRequest.php';
+require ELF_PATH . 'Routing/CoreResponse.php';
+require ELF_PATH . 'Routing/Request.php';
+require ELF_PATH . 'Routing/Response.php';
 
 /**
  * 加载域名类
