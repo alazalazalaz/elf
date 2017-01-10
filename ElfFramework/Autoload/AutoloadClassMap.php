@@ -54,6 +54,7 @@ return array(
 	'ElfFramework\Startup\CoreInclude'	=> ELF_PATH . 'Startup/CoreInclude.php',
 	'ElfFramework\Startup\CoreStartUp'	=> ELF_PATH . 'Startup/CoreStartUp.php',
 
+	'ElfFramework\System\System'		=> ELF_PATH . 'System/System.php',
 
 	'ElfFramework\View\View'			=> ELF_PATH . 'View/View.php',
 	'ElfFramework\View\SmartyView'		=> ELF_PATH . 'View/SmartyView.php',

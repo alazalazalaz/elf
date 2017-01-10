@@ -6,7 +6,6 @@ namespace ElfFramework\Routing;
 use ReflectionClass;
 use ElfFramework\Exception\CommonException;
 use ElfFramework\Domain\CoreDomain;
-use ElfFramework\Lib\Response;
 
 class CoreRouting
 {
@@ -61,8 +60,6 @@ class CoreRouting
 		call_user_func(array($obj, $action));
 
 		$obj->after();
-
-		Response::sendHttpHeader();
 
 	}
 

@@ -59,7 +59,7 @@ class CoreResponse
 	}
 
 
-	public static function headerByCode($httpCode){
+	public static function headerCode($httpCode){
 		self::$_headers[] = self::$_httpCode[$httpCode];
 	}
 

@@ -8,6 +8,7 @@ namespace ElfFramework\Exception;
 
 use Exception;
 use ElfFramework\Lib\Func;
+use ElfFramework\Lib\Response;
 
 class CommonException extends Exception
 {
@@ -20,22 +21,25 @@ class CommonException extends Exception
 
 
 	public function exceptionHandle(Exception $e){
-		// ob_clean();
+		$this->_clearAllOutput();
 		//这里判断是否有定义开启debug等，如果没有，则返回error 500错误。
 		
+		header("HTTP/1.1 500 Internal Server Error");
+
 	 	$msg 		= $e->getMessage();
 	 	$traceList 	= $e->getTrace();
 	 	$file 		= $e->getFile();
 	 	$line 		= $e->getLine();
 
 		$this->_displayError($msg, $traceList, $file, $line);
-		exit;
 	}
 
 
 	public function errorHandle($errNo, $errMessage, $errFile, $errLine, $errContext = ''){
-		// ob_clean();
+		$this->_clearAllOutput();
 		
+		header("HTTP/1.1 500 Internal Server Error");
+
 		list($errorLevel, $logLevel) 	= self::_mapErrorCode($errNo);
 		$msg 		= $errMessage;
 	 	$traceList 	= array();
@@ -48,11 +52,11 @@ class CommonException extends Exception
 
 
 	public function shutdownHandle(){
+
 var_dump(Func::getMemUse());
 
 		$lastError = error_get_last();
 		if ($lastError) {
-			// ob_get_level() and ob_clean();
 			$this->errorHandle($lastError['type'], $lastError['message'], $lastError['file'], $lastError['line']);
 			exit;
 		}
@@ -115,6 +119,13 @@ var_dump(Func::getMemUse());
 		}
 		
 		include "ErrorPage.php";
+	}
+
+
+	private function _clearAllOutput(){
+		while (ob_get_level()) {
+			ob_end_clean();
+		}
 	}
 
 }
