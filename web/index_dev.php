@@ -42,12 +42,12 @@ header("Content-Type:text/html;charset=utf8");
  * 加载框架
  */
 
-// $framePath = '../../myFrame/ElfFramework'; 							//请在这里配置框架的相对路径
-$framePath = '../ElfFramework';
+// $framePath = '../../myFrame/Elf'; 							//请在这里配置框架的相对路径
+$framePath = '../Elf';
 
 define('ELF_PATH', realpath($framePath) . DS);
 
 require ELF_PATH . 'Elf.php';
 
-use ElfFramework\StartUp\CoreStartUp;
+use Elf\StartUp\CoreStartUp;
 CoreStartUp::exec();

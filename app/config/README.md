@@ -32,7 +32,7 @@ zip.php文件中有使用命名空间的情况：
 			//命名空间类 		//该文件的目录
 			'app\lib\zip'	=> APP_PATH . 'lib\zip.php'
 		];
-		！！！或者不添加！！！，也能成功调用，因为zip.php中的命名空间和zip.php的文件目录结构一致，框架会自动实现查找文件，原因详见Elfframework/autoload/README.md
+		！！！或者不添加！！！，也能成功调用，因为zip.php中的命名空间和zip.php的文件目录结构一致，框架会自动实现查找文件，原因详见Elf/autoload/README.md
 
 	情况2：
 		zip.php文件内容：

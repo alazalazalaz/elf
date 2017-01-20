@@ -4,7 +4,7 @@
 * 
 */
 namespace modules\bbs\controller;
-use ElfFramework\Controller\Controller;
+use Elf\Controller\Controller;
 
 class AppController extends Controller
 {

@@ -3,7 +3,7 @@
 * app model
 */
 namespace app\model;
-use ElfFramework\Model;
+use Elf\Model;
 
 class AppModel extends Model
 {

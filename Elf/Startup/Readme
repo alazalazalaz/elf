@@ -1,0 +1,20 @@
+file:
+	CoreInclude.php				系统必须加载的文件
+	CoreStartUp.php				系统启动类
+
+
+function:
+	使用类：
+	CoreStartUp
+
+	use Elf\Startup\CoreStartUp;
+
+	self::exec();
+	作用：
+	1、初始化异常类
+	2、初始化域名
+	3、初始化...
+	...
+	...
+	6、执行路由(执行方法)
+

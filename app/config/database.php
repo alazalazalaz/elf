@@ -2,7 +2,7 @@
 
 return [
 	'default'	=> [
-		'class'		=> 'ElfFramework\Db\Driver\Mysql\MysqlPdo',
+		'class'		=> 'Elf\Db\Driver\Mysql\MysqlPdo',
 		'prefix'	=> 'su_',
 		'host'		=> 'localhost',
 		'port'		=> '3306',
@@ -12,7 +12,7 @@ return [
 	    'charset' => 'utf8',
 	],
 	'test'	=> [
-		'class'		=> 'ElfFramework\Db\Driver\Mysql\MysqlPdo',
+		'class'		=> 'Elf\Db\Driver\Mysql\MysqlPdo',
 		'prefix'	=> 'pre_',
 		'host'		=> 'localhost',
 		'port'		=> '3306',

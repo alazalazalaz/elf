@@ -46,7 +46,7 @@ $request_body = file_get_contents('php://input');
 ---|model
 ---|view
 ---|...etc
-|elfframework
+|Elf
 ---|config
 ---|controller
 ---|cache
