@@ -65,7 +65,7 @@ class SqlBuilder
 				break;
 			
 			default:
-				//@todo
+				throw new CommonException('error sql type', 1);
 				break;
 		}
 

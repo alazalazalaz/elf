@@ -17,7 +17,7 @@ interface DriverInterface{
 	 * 执行原生的sql语句
 	 * @return [type] [description]
 	 */
-	public function query($sql);
+	// public function query($sql);
 
 	/**
 	 * 设置字符集

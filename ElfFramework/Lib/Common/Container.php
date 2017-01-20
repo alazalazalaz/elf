@@ -15,19 +15,21 @@ class Container
 	
 	/**
 	 * single function
-	 * @todo  可以把classname md5一下来存储
 	 * @return object return the class single instance
 	 */
 	public static function factory($className){
+
 		if (empty($className)) {
 			return NULL;
 		}
 
-		if (!isset(self::$_singletons[$className])) {
-			self::$_singletons[$className] = new $className;
+		$md5ClassName = md5($className);
+
+		if (!isset(self::$_singletons[$md5ClassName])) {
+			self::$_singletons[$md5ClassName] = new $className;
 		}
 
-		return self::$_singletons[$className];
+		return self::$_singletons[$md5ClassName];
 	}
 
 

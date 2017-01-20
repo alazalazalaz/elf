@@ -50,9 +50,9 @@ class AaController extends AppController
 
 // @todo
 // done 1、熟悉ob_start ob_end_clean 这一套函数
-// done 2、优化设置头部的函数response，应该内容不多，解决用设置了头部后调用smarty的模板会报错（原因是smarty抢先于header对浏览器输出内容了）的问题
+// done 2、优化设置头部的函数response，解决用设置了头部后调用smarty的模板会报错（原因是smarty抢先于header对浏览器输出内容了）的问题
 // done 3、解决报异常和错误（shutdownHandle的时候不用管）的时候，浏览器应该只显示报错，而不应该显示之前打印的东西。
-// 4、给异常加日志
+// done today4、给异常加日志
 		// $result = AppModel::findOne($where, $where);
 		$result = AppModel::find($field, $where, '');
 		// $result = AppModel::deleteByPk($id);

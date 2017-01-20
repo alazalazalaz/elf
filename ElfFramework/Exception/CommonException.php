@@ -7,6 +7,7 @@
 namespace ElfFramework\Exception;
 
 use Exception;
+use ElfFramework\Lib\Log;
 use ElfFramework\Lib\Func;
 use ElfFramework\Lib\Response;
 
@@ -21,33 +22,52 @@ class CommonException extends Exception
 
 
 	public function exceptionHandle(Exception $e){
+
 		$this->_clearAllOutput();
 		//这里判断是否有定义开启debug等，如果没有，则返回error 500错误。
-		
+			
 		header("HTTP/1.1 500 Internal Server Error");
 
 	 	$msg 		= $e->getMessage();
-	 	$traceList 	= $e->getTrace();
+	 	$list 	 	= $e->getTrace();
 	 	$file 		= $e->getFile();
 	 	$line 		= $e->getLine();
 
-		$this->_displayError($msg, $traceList, $file, $line);
+	 	foreach ($list as $key => $value) {
+			$traceList[$key]['line'] 	= isset($value['line']) ? $value['line'] : '';
+			$traceList[$key]['function'] 	= isset($value['function']) ? $value['function'] : '';
+			$traceList[$key]['file'] 	= isset($value['file']) ? $value['file'] : '';
+			$traceList[$key]['class'] 	= isset($value['class']) ? $value['class'] : '';
+		}
+
+	 	log::write("TYPE:exception \r\nERROR:	" . $msg . "\r\nFILE: " . $file . "\r\nLINE: " . $line . "\r\nTRACE:" . var_export($traceList, TRUE), 3, 'error');
+
+	 	if (defined('DEBUG') && DEBUG === TRUE) {
+	 		$this->_displayError($msg, $traceList, $file, $line);	
+	 		exit;
+	 	}
 	}
 
 
 	public function errorHandle($errNo, $errMessage, $errFile, $errLine, $errContext = ''){
+
 		$this->_clearAllOutput();
 		
 		header("HTTP/1.1 500 Internal Server Error");
 
-		list($errorLevel, $logLevel) 	= self::_mapErrorCode($errNo);
+		list($errorLevel, $logLevel) 	= self::_mapErrorCode($errNo);   
 		$msg 		= $errMessage;
 	 	$traceList 	= array();
 	 	$file 		= $errFile;
 	 	$line 		= $errLine;
 
-		$this->_displayError($msg, $traceList, $file, $line, 'error', $errorLevel);
-		exit;
+	 	log::write("TYPE:error \r\nERROR:	" . $msg . "\r\nFILE: " . $file . "\r\nLINE: " . $line, 3, 'error');
+
+		
+		if (defined('DEBUG') && DEBUG === TRUE) {
+	 		$this->_displayError($msg, $traceList, $file, $line, 'error', $errorLevel);
+			exit;
+	 	}
 	}
 
 
@@ -109,13 +129,6 @@ var_dump(Func::getMemUse());
 			default:
 				$type = 'Exception:';
 				break;
-		}
-
-		foreach ($traceList as $key => $value) {
-			$traceList[$key]['line'] 	= isset($value['line']) ? $value['line'] : '';
-			$traceList[$key]['function'] 	= isset($value['function']) ? $value['function'] : '';
-			$traceList[$key]['file'] 	= isset($value['file']) ? $value['file'] : '';
-			$traceList[$key]['class'] 	= isset($value['class']) ? $value['class'] : '';
 		}
 		
 		include "ErrorPage.php";

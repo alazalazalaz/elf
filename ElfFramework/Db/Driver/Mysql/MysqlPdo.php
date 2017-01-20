@@ -129,8 +129,7 @@ class MysqlPdo implements DriverInterface
 			return new PdoStatement($sth);
 		} catch (PDOException $e) {
 			log::write('ERROR:	' . $e->getMessage() . "\r\nSQL:	" . $sql . "\r\nPARAM:	" . var_export($param, TRUE), 3, 'errorSql');
-			//@todo判断是否设置debug模式，如果有，则抛出异常，否则返回FALSE
-			throw new PDOException($e->getMessage() . '  <br>ERROR SQL:' . $sql, 1);
+			throw new CommonException($e->getMessage() . '  <br>ERROR SQL:' . $sql, 1);
 		}
 	}
 
@@ -139,7 +138,7 @@ class MysqlPdo implements DriverInterface
 		try {
 			$this->getPdo()->beginTransaction();
 		} catch (PDOException $e) {
-			throw new PDOException($e->getMessage(), 1);
+			throw new CommonException($e->getMessage(), 1);
 		}
 	}
 
@@ -148,7 +147,7 @@ class MysqlPdo implements DriverInterface
 		try {
 			$this->getPdo()->commit();
 		} catch (PDOException $e) {
-			throw new PDOException($e->getMessage(), 1);
+			throw new CommonException($e->getMessage(), 1);
 		}
 	}
 
@@ -157,30 +156,7 @@ class MysqlPdo implements DriverInterface
 		try {
 			$this->getPdo()->rollback();
 		} catch (PDOException $e) {
-			throw new PDOException($e->getMessage(), 1);
-		}
-	}
-
-
-	/**
-	 * 执行原生的sql语句查询
-	 * @todo  带废除
-	 * @param  string $sql sql statement
-	 * @return mixed
-	 */
-	public function query($sql){
-		if (empty($sql)) {
-			return NULL;
-		}
-
-		try {
-			$statement = $this->getPdo()->query($sql);
-			$statement = new PdoStatement($statement);
-			return $statement;
-		} catch (PDOException $e) {
-			//@todo写入log
-			//@todo判断是否设置debug模式，如果有，则抛出异常，否则返回FALSE
-			throw new PDOException($e->getMessage(), 1);
+			throw new CommonException($e->getMessage(), 1);
 		}
 	}
 

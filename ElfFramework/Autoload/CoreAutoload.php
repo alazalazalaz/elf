@@ -27,9 +27,9 @@ class CoreAutoload
 
 
 	private function loadClass($namespaceClassName){
-	var_dump($namespaceClassName);		
+			
 		if (isset(self::$autoloadClassMap[$namespaceClassName])) {
-			echo '<br>elf class map';
+			// echo '<br>elf class map';
 			require self::$autoloadClassMap[$namespaceClassName];
 			return TRUE;
 		}
@@ -37,31 +37,16 @@ class CoreAutoload
 
 		$fileFullPath 	= ROOT_PATH . str_replace(DS, '\\', $namespaceClassName) . EXT;
 		if (file_exists($fileFullPath)) {
-			echo '<br>auto find';
+			// echo '<br>auto find';
 			require $fileFullPath;
 			return TRUE;
 		}
 
-		echo 'others =====';
+		// echo 'others =====';
 
 		//注释掉抛出异常，让程序继续跑，因为有可能其他vendor里面有注册自动加载功能。比如smarty。spl_autoload_register按照调用先后顺序，依次执行注册的函数。
 		// throw new CommonException('目录：' . $fileFullPath . ' 找不到该文件。');
 
 	}
-
-
-	// private function getFilePathByNs($namespaceClassName){
-	// 	return ROOT_PATH . str_replace(DS, '\\', $namespaceClassName) . EXT;
-	// 	// $array 	= explode('\\', $namespaceClassName);
-	// 	// $array  = array_filter($array);
-	// 	// $firstNs= array_shift($array);
-
-	// 	// if ($firstNs == 'ElfFramework') {
-	// 	// 	return ELF_PATH . implode(DS, $array) . EXT; //这个判断可以去掉@todo
-	// 	// }else{
-	// 	// 	return ROOT_PATH . str_replace(DS, '\\', $namespaceClassName) . EXT;
-	// 	// }
-	// }
-
 
 }

@@ -2,7 +2,6 @@
 
 /**
 * config类型为数组对象
-* @todo  以后可以写config类型为string或者其他的对象，可以建立一个interface，让所有类型继承它，实现共同接口
 */
 namespace ElfFramework\Lib;
 use ElfFramework\Exception\CommonException;

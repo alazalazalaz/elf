@@ -20,6 +20,8 @@ define('ELF_NS', 'elf\\');
 define('TIMESTAMP', time());
 date_default_timezone_set('PRC');
 
+define('DEBUG', TRUE);				//建议线上设置为false
+
 /**
  * APP_PATH，APP_NS这两个宏定义会自动在CoreDomain里面根据域名来定义
  */
