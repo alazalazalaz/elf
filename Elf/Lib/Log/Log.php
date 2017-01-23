@@ -9,6 +9,7 @@ use Elf\Routing\CoreRequest;
 
 class Log
 {
+
 	/**
 	 * @param  string
 	 * @param  int
@@ -44,10 +45,12 @@ class Log
 
 
 	private static function _createPathName($path){
+		$defaultDir = APP_PATH . 'tmp' . DS . 'log' . DS;
+
 		if (!empty($path)) {
 			return $path;
 		}
-		return APP_PATH . 'data' . DS . 'log' . DS . date('Y-m', TIMESTAMP) . DS . date('d', TIMESTAMP) . DS;
+		return $defaultDir . date('Y-m', TIMESTAMP) . DS . date('d', TIMESTAMP) . DS;
 	}
 
 

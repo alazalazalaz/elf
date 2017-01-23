@@ -1,0 +1,11 @@
+
+-------------------------------------------------------
+time 		:20170123-18:16:26(1485166586)
+file 		:E:\www\wamp\www\elf-git\elf\app\
+request 	:controller\box\xxx\aaController\actiontest
+content 	:
+TYPE:error 
+ERROR:	Call to undefined function Elf\Lib\id_dir()
+FILE: E:\www\wamp\www\elf-git\elf\Elf\Lib\File\File.php
+LINE: 251
+-------------------------------------------------------

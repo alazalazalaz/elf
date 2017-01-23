@@ -1,0 +1,55 @@
+
+-------------------------------------------------------
+time 		:20170121-11:01:14(1484967674)
+file 		:E:\www\wamp\www\elf-git\elf\app\
+request 	:controller\box\xxx\aaController\actiontest
+content 	:
+TYPE:error 
+ERROR:	mkdir(): Invalid path
+FILE: E:\www\wamp\www\elf-git\elf\Elf\Lib\File\File.php
+LINE: 21
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170121-11:03:31(1484967811)
+file 		:E:\www\wamp\www\elf-git\elf\app\
+request 	:controller\box\xxx\aaController\actiontest
+content 	:
+TYPE:error 
+ERROR:	Undefined variable: fileFullPath
+FILE: E:\www\wamp\www\elf-git\elf\Elf\Lib\File\File.php
+LINE: 17
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170121-11:11:21(1484968281)
+file 		:E:\www\wamp\www\elf-git\elf\app\
+request 	:controller\box\xxx\aaController\actiontest
+content 	:
+TYPE:error 
+ERROR:	Undefined variable: fileFullPath
+FILE: E:\www\wamp\www\elf-git\elf\Elf\Lib\File\File.php
+LINE: 16
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170121-11:12:27(1484968347)
+file 		:E:\www\wamp\www\elf-git\elf\app\
+request 	:controller\box\xxx\aaController\actiontest
+content 	:
+TYPE:error 
+ERROR:	mkdir(): File exists
+FILE: E:\www\wamp\www\elf-git\elf\Elf\Lib\File\File.php
+LINE: 23
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170121-11:58:21(1484971101)
+file 		:E:\www\wamp\www\elf-git\elf\app\
+request 	:controller\box\xxx\aaController\actiontest
+content 	:
+TYPE:error 
+ERROR:	fread() expects exactly 2 parameters, 1 given
+FILE: E:\www\wamp\www\elf-git\elf\Elf\Lib\File\File.php
+LINE: 40
+-------------------------------------------------------

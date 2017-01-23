@@ -16,9 +16,9 @@ class SmartyView implements ViewInterface
 	function __construct()
 	{
 		$this->_smarty = new \Smarty();
-		$this->_smarty->template_dir 		= APP_PATH . 'data' . DS . 'smarty' . DS . 'templates' . DS;
-		$this->_smarty->compile_dir 		= APP_PATH . 'data' . DS . 'smarty' . DS . 'templates_c' . DS;
-		$this->_smarty->cache_dir 			= APP_PATH . 'data' . DS . 'smarty' . DS . 'cache' . DS;
+		$this->_smarty->template_dir 		= APP_PATH . 'tmp' . DS . 'smarty' . DS . 'templates' . DS;
+		$this->_smarty->compile_dir 		= APP_PATH . 'tmp' . DS . 'smarty' . DS . 'templates_c' . DS;
+		$this->_smarty->cache_dir 			= APP_PATH . 'tmp' . DS . 'smarty' . DS . 'cache' . DS;
 		$this->_smarty->config_dir 			= '';
 		$this->_smarty->left_delimiter 		= '<{';
 		$this->_smarty->right_delimiter 	= '}>';

@@ -1,0 +1,22 @@
+
+-------------------------------------------------------
+time 		:20170121-16:44:50(1484988290)
+file 		:E:\www\wamp\www\elf-git\elf\app\
+request 	:controller\box\xxx\aaController\actiontest
+content 	:
+TYPE:error 
+ERROR:	scandir(E:/www/wamp/www/elf-git/elf/app/data*,E:/www/wamp/www/elf-git/elf/app/data*): No such file or directory
+FILE: E:\www\wamp\www\elf-git\elf\Elf\Lib\File\File.php
+LINE: 73
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170121-16:45:12(1484988312)
+file 		:E:\www\wamp\www\elf-git\elf\app\
+request 	:controller\box\xxx\aaController\actiontest
+content 	:
+TYPE:error 
+ERROR:	scandir(E:/www/wamp/www/elf-git/elf/app/data/*,E:/www/wamp/www/elf-git/elf/app/data/*): No such file or directory
+FILE: E:\www\wamp\www\elf-git\elf\Elf\Lib\File\File.php
+LINE: 73
+-------------------------------------------------------

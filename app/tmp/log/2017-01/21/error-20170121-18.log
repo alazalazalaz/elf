@@ -1,0 +1,11 @@
+
+-------------------------------------------------------
+time 		:20170121-18:00:32(1484992832)
+file 		:E:\www\wamp\www\elf-git\elf\app\
+request 	:controller\box\xxx\aaController\actiontest
+content 	:
+TYPE:error 
+ERROR:	syntax error, unexpected '}'
+FILE: E:\www\wamp\www\elf-git\elf\Elf\Lib\File\File.php
+LINE: 139
+-------------------------------------------------------

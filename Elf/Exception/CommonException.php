@@ -73,7 +73,7 @@ class CommonException extends Exception
 
 	public function shutdownHandle(){
 
-		// var_dump(Func::getMemUse());
+		var_dump(Func::getMemUse());
 
 		$lastError = error_get_last();
 		if ($lastError) {

@@ -2,18 +2,18 @@ AJAX上传文件的问题
 
 
 
-自动加载类
-控制器，模型，的创建
-异常
-日志
+done	自动加载类
+done	控制器，模型，的创建
+done	异常
+done	日志
 
-路由
-输入的验证
-配置，设置
-单例模式
+done	路由
+输入的验证，正则
+done	配置，设置
+done	单例模式
 
 
-模型封装，PDO。。。55555
+done	模型封装，PDO。。。55555
 
 引擎demo。。。。。5555
 支持那种POST方式，额，腾讯云接口那种uri
@@ -27,6 +27,8 @@ $request_body = file_get_contents('php://input');
 文件/图片下载类
 
 把控制器对外的接口封装为request，request里面只放对外的接口
+
+excel的操作类
 		
 |app
 ---|config

@@ -1,0 +1,22 @@
+
+-------------------------------------------------------
+time 		:20170123-14:48:32(1485154112)
+file 		:E:\www\wamp\www\elf-git\elf\app\
+request 	:controller\box\xxx\aaController\actiontest
+content 	:
+TYPE:error 
+ERROR:	Class 'Elf\Lib\RecursiveIteratorIterator' not found
+FILE: E:\www\wamp\www\elf-git\elf\Elf\Lib\File\File.php
+LINE: 105
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170123-14:52:23(1485154343)
+file 		:E:\www\wamp\www\elf-git\elf\app\
+request 	:controller\box\xxx\aaController\actiontest
+content 	:
+TYPE:error 
+ERROR:	Call to undefined method SplFileInfo::hasChildren()
+FILE: E:\www\wamp\www\elf-git\elf\Elf\Lib\File\File.php
+LINE: 113
+-------------------------------------------------------

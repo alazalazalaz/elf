@@ -1,0 +1,132 @@
+
+-------------------------------------------------------
+time 		:20170123-17:08:33(1485162513)
+file 		:E:\www\wamp\www\elf-git\elf\app\
+request 	:controller\box\xxx\aaController\actiontest
+content 	:
+TYPE:error 
+ERROR:	syntax error, unexpected '{', expecting ')'
+FILE: E:\www\wamp\www\elf-git\elf\Elf\Lib\File\File.php
+LINE: 140
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170123-17:08:49(1485162529)
+file 		:E:\www\wamp\www\elf-git\elf\app\
+request 	:controller\box\xxx\aaController\actiontest
+content 	:
+TYPE:error 
+ERROR:	Undefined variable: result
+FILE: E:\www\wamp\www\elf-git\elf\Elf\Lib\File\File.php
+LINE: 152
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170123-17:15:57(1485162957)
+file 		:E:\www\wamp\www\elf-git\elf\app\
+request 	:controller\box\xxx\aaController\actiontest
+content 	:
+TYPE:error 
+ERROR:	array_merge(): Argument #2 is not an array
+FILE: E:\www\wamp\www\elf-git\elf\Elf\Lib\File\File.php
+LINE: 153
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170123-17:16:51(1485163011)
+file 		:E:\www\wamp\www\elf-git\elf\app\
+request 	:controller\box\xxx\aaController\actiontest
+content 	:
+TYPE:error 
+ERROR:	array_merge(): Argument #2 is not an array
+FILE: E:\www\wamp\www\elf-git\elf\Elf\Lib\File\File.php
+LINE: 153
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170123-17:17:57(1485163077)
+file 		:E:\www\wamp\www\elf-git\elf\app\
+request 	:controller\box\xxx\aaController\actiontest
+content 	:
+TYPE:error 
+ERROR:	array_merge(): Argument #2 is not an array
+FILE: E:\www\wamp\www\elf-git\elf\Elf\Lib\File\File.php
+LINE: 154
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170123-17:18:25(1485163105)
+file 		:E:\www\wamp\www\elf-git\elf\app\
+request 	:controller\box\xxx\aaController\actiontest
+content 	:
+TYPE:error 
+ERROR:	array_merge(): Argument #2 is not an array
+FILE: E:\www\wamp\www\elf-git\elf\Elf\Lib\File\File.php
+LINE: 154
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170123-17:18:39(1485163119)
+file 		:E:\www\wamp\www\elf-git\elf\app\
+request 	:controller\box\xxx\aaController\actiontest
+content 	:
+TYPE:error 
+ERROR:	array_merge(): Argument #2 is not an array
+FILE: E:\www\wamp\www\elf-git\elf\Elf\Lib\File\File.php
+LINE: 155
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170123-17:18:42(1485163122)
+file 		:E:\www\wamp\www\elf-git\elf\app\
+request 	:controller\box\xxx\aaController\actiontest
+content 	:
+TYPE:error 
+ERROR:	array_merge(): Argument #2 is not an array
+FILE: E:\www\wamp\www\elf-git\elf\Elf\Lib\File\File.php
+LINE: 155
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170123-17:19:03(1485163143)
+file 		:E:\www\wamp\www\elf-git\elf\app\
+request 	:controller\box\xxx\aaController\actiontest
+content 	:
+TYPE:error 
+ERROR:	array_merge(): Argument #2 is not an array
+FILE: E:\www\wamp\www\elf-git\elf\Elf\Lib\File\File.php
+LINE: 154
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170123-17:26:47(1485163607)
+file 		:E:\www\wamp\www\elf-git\elf\app\
+request 	:controller\box\xxx\aaController\actiontest
+content 	:
+TYPE:error 
+ERROR:	Maximum function nesting level of '100' reached, aborting!
+FILE: E:\www\wamp\www\elf-git\elf\Elf\Lib\File\File.php
+LINE: 211
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170123-17:36:53(1485164213)
+file 		:E:\www\wamp\www\elf-git\elf\app\
+request 	:controller\box\xxx\aaController\actiontest
+content 	:
+TYPE:error 
+ERROR:	Maximum function nesting level of '100' reached, aborting!
+FILE: E:\www\wamp\www\elf-git\elf\Elf\Lib\File\File.php
+LINE: 211
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170123-17:36:58(1485164218)
+file 		:E:\www\wamp\www\elf-git\elf\app\
+request 	:controller\box\xxx\aaController\actiontest
+content 	:
+TYPE:error 
+ERROR:	Maximum function nesting level of '100' reached, aborting!
+FILE: E:\www\wamp\www\elf-git\elf\Elf\Lib\File\File.php
+LINE: 211
+-------------------------------------------------------
