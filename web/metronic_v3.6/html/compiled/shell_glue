@@ -1,0 +1,16 @@
+#!/bin/bash
+
+file=$1;
+
+
+headerFile='header';
+headerContent=$(sudo cat '../layout/header.html');
+
+sed -ig "s/@@header@@/'$headerContent'/" $file;
+
+#echo "$headerContent" >> $file;
+
+
+
+
+

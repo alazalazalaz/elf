@@ -8,9 +8,11 @@ namespace Elf\Routing;
 class CoreRequest
 {
 
-	private static $controller 	= '';
-	private static $controllerPath = '';
-	private static $action 		= '';
+	private static $controller 	= '';		//eg:indexController
+	private static $controllerPath = '';	//eg:app/controller/indexController
+	private static $action 		= '';		//eg:actionindex
+	private static $controllerName = '';	//eg:index
+	private static $actionName	= '';		//eg:index
 	private static $param 		= array();
 	private static $clientIp	= '';
 	private static $clientPort	= '';
@@ -47,12 +49,15 @@ class CoreRequest
 	public static function data($key = ''){
 		$data = array(
 			'controller' 	=> self::$controller,
-			'controllerPath'=> 'controller' . DS . self::$controllerPath,
+			'controllerPath'=> 'controller\\' . self::$controllerPath,
 			'action'		=> self::$action,
+			'controllerName'=> self::$controllerName,
+			'actionName'	=> self::$actionName,
 			'param'			=> self::$param,
 			'clientIp'		=> self::$clientIp,
 			'clientPort'	=> self::$clientPort
 		);
+		
 		if ($key) {
 			return isset($data[$key]) ? $data[$key] : '';
 		}
@@ -87,8 +92,10 @@ class CoreRequest
 
 		$controller = end($fileArr);
 
+		self::$controllerName   = $controller;
 		self::$controller 		= $controller . self::CONTROLLER_SUF;
 		self::$controllerPath 	= $filePath . self::CONTROLLER_SUF;
+
 	}
 
 
@@ -103,6 +110,7 @@ class CoreRequest
 			self::$action = isset($param[self::URL_ACTION_KEY]) ? $param[self::URL_ACTION_KEY] : self::ACTION_DEFAULT;
 		}
 
+		self::$actionName 	  = self::$action;
 		self::$action = self::ACTION_PRE . self::$action;
 	}
 

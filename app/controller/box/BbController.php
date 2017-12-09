@@ -4,9 +4,14 @@
 * 
 */
 namespace app\controller\box;
+use Elf\Controller;
 
-class BbController
+class BbController extends Controller
 {
 	
+
+	public function actionindex(){
+		echo 'bb';
+	}
 	
 }

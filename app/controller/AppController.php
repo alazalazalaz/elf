@@ -10,7 +10,7 @@ class AppController extends Controller
 {
 	
 	public function actiontest(){
-		echo 'test';
+		echo 'test';exit;
 	}
 
 	

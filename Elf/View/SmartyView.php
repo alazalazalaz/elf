@@ -5,6 +5,7 @@
 namespace Elf\View;
 use Elf\Exception\CommonException;
 use Elf\View\ViewInterface;
+use Elf\Lib\Request;
 
 class SmartyView implements ViewInterface
 {
@@ -22,9 +23,10 @@ class SmartyView implements ViewInterface
 		$this->_smarty->config_dir 			= '';
 		$this->_smarty->left_delimiter 		= '<{';
 		$this->_smarty->right_delimiter 	= '}>';
-		$this->_smarty->force_compile 		= FALSE;
+		$this->_smarty->force_compile 		= TRUE;
 		$this->_smarty->caching 			= FALSE;
 		$this->_smarty->cache_lifetime 		= 3600;
+		$this->_smarty->compile_check		= TRUE;//生产环境设置为false
 		
 		$this->_tplPath 					= APP_PATH . 'view' . DS;
 		$this->_fileSuffix 					= '.tpl';
@@ -44,11 +46,11 @@ class SmartyView implements ViewInterface
 
 	public function view($fileName){
 
-		$fullPath = $this->_tplPath . $fileName . $this->_fileSuffix;
+		$fullPath = $this->_tplPath . Request::data('controllerName') . DS . $fileName . $this->_fileSuffix;
 		if (!is_file($fullPath)) {
 			throw new CommonException("模板文件不存在：" . $fullPath, 1);
 		}
-
+		
 		$this->_smarty->display($fullPath);
 	}
 

@@ -23,7 +23,7 @@ class CommonException extends Exception
 
 	public function exceptionHandle(Exception $e){
 
-		$this->_clearAllOutput();
+		// $this->_clearAllOutput();
 		//这里判断是否有定义开启debug等，如果没有，则返回error 500错误。
 			
 		header("HTTP/1.1 500 Internal Server Error");
@@ -40,7 +40,7 @@ class CommonException extends Exception
 			$traceList[$key]['class'] 	= isset($value['class']) ? $value['class'] : '';
 		}
 
-	 	log::write("TYPE:exception \r\nERROR:	" . $msg . "\r\nFILE: " . $file . "\r\nLINE: " . $line . "\r\nTRACE:" . var_export($traceList, TRUE), 3, 'error');
+	 	Log::write("TYPE:exception \r\nERROR:	" . $msg . "\r\nFILE: " . $file . "\r\nLINE: " . $line . "\r\nTRACE:" . var_export($traceList, TRUE), 3, 'error');
 
 	 	if (defined('DEBUG') && DEBUG === TRUE) {
 	 		$this->_displayError($msg, $traceList, $file, $line);	

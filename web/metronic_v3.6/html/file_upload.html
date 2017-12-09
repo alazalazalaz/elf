@@ -1,0 +1,77 @@
+
+
+@@include('layout/header.html')
+
+
+<div class="page-content-wrapper">
+    <div class="page-content">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="portlet box blue-hoki ">
+                    <div class="portlet-title">
+                        <div class="caption">
+                            <i class="fa fa-gift"></i>图片上传
+                        </div>
+                        <div class="tools">
+                            <a href="" class="collapse">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 1，定义sf-controller[必须](名称可以任意填，一个controller表示一个作用域，一个页面可以有多个) -->
+                    <div class="portlet-body" sf-controller="myNoteCtrl">
+                        <!-- 2，定义sf-display[可选]作用：显示警告弹框 -->
+                        <div sf-display="error_msg"></div>
+                            <!-- 3，定义form表单[必须]参数：sf-submit-method=ajax/form分别表示用ajax提交或者form表单提交 -->
+                            <form class="form-horizontal" action="../../data/base_data.data" method="get" sf-submit-method="ajax">
+                            
+                            <div class="form-body">
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">上传文件(老版本无样式):</label>
+                                    <!-- 定义图片上传插件[可选]
+                                    参数：
+                                    value：表示初始化的图片eg:http://img.xxx.com/xxxx.jpg
+                                    sf-click="uplad()"：表示文件上传操作
+                                    sf-upload-action:表示要上传的服务器地址 eg:http://xxx.com/file/upload -->
+                                    <div sf-name="cover" value="" sf-click="upload()" sf-upload-action=""></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">上传文件(新版本)</label>
+                                    <div class="col-md-5">
+                                        <!-- 定义图片上传插件，新版本(可选)
+                                        参数：
+                                        type:file   [必须]
+                                        sf-upload-action 上传地址[必须]
+                                        sf-name     表单name[必须]
+                                        sf-click:file()     插件操作[必须]
+                                        sf-init     初始化图片，如果是文件会自动转化为一张系统图片显示[可选]
+                                        sf-width    初始化图片宽度[可选]
+                                        sf-height   初始化图片高度[可选] -->
+                                        <input type="file" sf-upload-action="http://imgapi.yingxiong.com/interface/uploadFile?app=hsdk&code=5c0aoajF6wG7XfS4_uJuKRKPhAAjjk2WMjz4NuIUCqPHOL10qkGosjlOilfSqBez9KQMO4E6HmsiYDSzPaMiwuiSe0EtcDl4v%2FUEHNV3ILcWKOLBS6tu_CjE5f5fQde2BgeQ0F5FPng%2F&datetime=1496626092" sf-name="newfile" sf-click="file()" sf-init="../../img/gun.zip" sf-width='55px' sf-height='70px'>
+                                        
+                                    </div>                      
+                                </div>
+
+
+                                <div class="form-actions right1">
+                                    <a type="button" href="index.html" class="btn red">取消</a>
+                                    <!-- 定义保存按钮[必须]参数sf-click="save()"表示提交表单操作，参数sf-jump-action表示表单提交成功后跳转的url -->
+                                    <a sf-click="save()" sf-jump-action="" class="btn green addpic">保存</a>
+                                    
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+
+
+
+@@include('layout/footer.html')

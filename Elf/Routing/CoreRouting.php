@@ -15,7 +15,7 @@ class CoreRouting
 	 * @var array
 	 */
 	private static $sysFun 	= array(
-		'before', 'after', 'set', 'display', 'view', 'param'
+		'beforeaction', 'afteraction', 'set', 'display', 'view', 'param'
 	);
 
 
@@ -55,11 +55,11 @@ class CoreRouting
 
 		$obj = $ref->newInstance();
 		
-		$obj->before();
+		$obj->beforeaction();
 
 		call_user_func(array($obj, $action));
 
-		$obj->after();
+		$obj->afteraction();
 
 	}
 

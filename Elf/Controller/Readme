@@ -12,9 +12,9 @@ function:
 	方法：
 	$this->param($key, $type = '', $default = '');	//获取URL以及表单中的参数，包括了_get和_post的，type表示获取的值是int或者string，default表示默认返回的值
 
-	$this->before();	//控制器执行action前执行的方法
+	$this->beforeaction();	//控制器执行action前执行的方法
 
-	$this->after();		//控制器执行action后执行的方法
+	$this->afteraction();		//控制器执行action后执行的方法
 
 	$this->set();		//视图方法，设置value到模板（默认smarty引擎）
 

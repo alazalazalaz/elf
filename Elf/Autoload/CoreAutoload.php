@@ -27,15 +27,14 @@ class CoreAutoload
 
 
 	private function loadClass($namespaceClassName){
-			
 		if (isset(self::$autoloadClassMap[$namespaceClassName])) {
 			// echo '<br>elf class map';
 			require self::$autoloadClassMap[$namespaceClassName];
 			return TRUE;
 		}
 
-
-		$fileFullPath 	= ROOT_PATH . str_replace(DS, '\\', $namespaceClassName) . EXT;
+		//@todo这里要考虑跨平台的兼容性问题
+		$fileFullPath 	= ROOT_PATH . str_replace('\\', '/', $namespaceClassName) . EXT;
 		if (file_exists($fileFullPath)) {
 			// echo '<br>auto find';
 			require $fileFullPath;

@@ -45,3 +45,9 @@ require ELF_PATH . 'Controller/Controller.php';
 
 require ELF_PATH . 'Lib/ConfigHandle/Config.php';
 
+/**
+ * 加载日志等东西，CommonException使用，因为使用的时候还没有加入auto load
+ */
+require ELF_PATH . 'Lib/Common/Func.php';
+require ELF_PATH . 'Lib/Log/Log.php';
+

@@ -1,0 +1,40 @@
+.sf-file {
+    position: relative;
+    display: inline-block;
+    background: #428bca;
+    border: 1px solid #357ebd;
+    border-radius: 4px;
+    padding: 4px 12px;
+    overflow: hidden;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 24px;
+}
+.sf-file input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.sf-file:hover {
+    background: #2e6da4;
+    border-color: #78C3F3;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.sf-file-img{
+	margin-bottom: 10px;
+}
+
+.sf-file-img-height{
+	min-height: 100px;
+	max-height: 253px;
+}
+
+.sf-file-img-width{
+	min-width: 141px;
+	max-width: 376px;
+}

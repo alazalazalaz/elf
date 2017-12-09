@@ -28,13 +28,16 @@ define('DEBUG', TRUE);				//建议线上设置为false
 // define('APP_NS', 'value'); 										//eg:\modules\bbs\ OR \app\
 // define('APP_PATH', 'value');										//eg:\modules\bbs\ OR \app\
 
-
+define('APP_PATH', BASE_APP_PATH);
+define('APP_NS', BASE_APP_NS);
 
 /**
  * 配置当前域名
  * eg:www.baidu.com 请配置为baidu
  */
 define('DOMAIN_NAME', 'elf');
+
+define("WEB_DOMAIN", '//local.elf.com/metronic_v3.6');
 
 header("Content-Type:text/html;charset=utf8");
 
@@ -51,3 +54,6 @@ require ELF_PATH . 'Elf.php';
 
 use Elf\StartUp\CoreStartUp;
 CoreStartUp::exec();
+
+
+

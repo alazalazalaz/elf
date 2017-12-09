@@ -64,9 +64,11 @@ class Log
 			return TRUE;
 		}
 
-		if (!mkdir($path, '0777', TRUE)) {
+		if (!mkdir($path, 0777, TRUE)) {
 			return FALSE;
 		}
+
+		chmod($path, 0777);
 
 		return TRUE;
 	}

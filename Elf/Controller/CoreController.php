@@ -44,10 +44,10 @@ class CoreController
 	}
 
 
-	public function before(){}
+	public function beforeaction(){}
 	
 
-	public function after(){}
+	public function afteraction(){}
 
 
 	public function set($key, $value){
