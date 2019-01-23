@@ -1,0 +1,33 @@
+
+-------------------------------------------------------
+time 		:20171212-12:12:43(1513051963)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionalgtotal
+content 	:
+TYPE:error 
+ERROR:	syntax error, unexpected 'foreach' (T_FOREACH)
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php
+LINE: 111
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171212-12:13:12(1513051992)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionalgtotal
+content 	:
+TYPE:error 
+ERROR:	syntax error, unexpected 'foreach' (T_FOREACH)
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php
+LINE: 112
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171212-12:13:22(1513052002)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionalgtotal
+content 	:
+TYPE:error 
+ERROR:	syntax error, unexpected 'foreach' (T_FOREACH)
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php
+LINE: 112
+-------------------------------------------------------

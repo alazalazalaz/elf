@@ -1,0 +1,22 @@
+
+-------------------------------------------------------
+time 		:20171213-16:08:38(1513152518)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionmatch
+content 	:
+TYPE:error 
+ERROR:	syntax error, unexpected '}', expecting ',' or ';'
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php
+LINE: 210
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171213-16:08:47(1513152527)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionmatch
+content 	:
+TYPE:error 
+ERROR:	Undefined offset: 1224
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php
+LINE: 273
+-------------------------------------------------------

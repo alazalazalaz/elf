@@ -20,6 +20,16 @@ return [
 	    'username' => 'root',
 	    'password' => '',
 	    'charset' => 'utf8',
+	],
+	'nba'	=> [
+		'class'		=> 'Elf\Db\Driver\Mysql\MysqlPdo',
+		'prefix'	=> 'nba_',
+		'host'		=> 'localhost',
+		'port'		=> '3306',
+		'dbname'	=> 'nba',
+	    'username' => 'root',
+	    'password' => '',
+	    'charset' => 'utf8',
 	]
 ];
 

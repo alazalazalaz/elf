@@ -1,0 +1,182 @@
+
+-------------------------------------------------------
+time 		:20171217-20:30:43(1513513843)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionodds
+content 	:
+TYPE:error 
+ERROR:	Call to undefined method Elf\Db\SqlBuilder\Sql::groupby()
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php
+LINE: 166
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171217-20:30:50(1513513850)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionodds
+content 	:
+TYPE:error 
+ERROR:	Call to undefined method Elf\Db\SqlBuilder\Sql::group_by()
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php
+LINE: 166
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171217-20:30:54(1513513854)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionodds
+content 	:
+TYPE:error 
+ERROR:	Call to undefined method Elf\Db\SqlBuilder\Sql::groupBy()
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php
+LINE: 166
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171217-20:31:06(1513513866)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionodds
+content 	:
+TYPE:exception 
+ERROR:	SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'nba.nba_match_odds_avg.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by  <br>ERROR SQL:SELECT * FROM nba_match_odds_avg GROUP BY match_id
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Db/Driver/Mysql/MysqlPdo.php
+LINE: 132
+TRACE:array (
+  0 => 
+  array (
+    'line' => 93,
+    'function' => 'prepare',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Db/Driver/Mysql/MysqlPdo.php',
+    'class' => 'Elf\\Db\\Driver\\Mysql\\MysqlPdo',
+  ),
+  1 => 
+  array (
+    'line' => 114,
+    'function' => 'execute',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Db/SqlBuilder/BaseSql.php',
+    'class' => 'Elf\\Db\\Driver\\Mysql\\MysqlPdo',
+  ),
+  2 => 
+  array (
+    'line' => 166,
+    'function' => 'execute',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php',
+    'class' => 'Elf\\Db\\SqlBuilder\\BaseSql',
+  ),
+  3 => 
+  array (
+    'line' => '',
+    'function' => 'actionOdds',
+    'file' => '',
+    'class' => 'app\\controller\\nba\\CollectController',
+  ),
+  4 => 
+  array (
+    'line' => 60,
+    'function' => 'call_user_func',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => '',
+  ),
+  5 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  6 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  7 => 
+  array (
+    'line' => 56,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171217-20:31:25(1513513885)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionodds
+content 	:
+TYPE:exception 
+ERROR:	SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'nba.nba_match_odds_avg.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by  <br>ERROR SQL:SELECT * FROM nba_match_odds_avg GROUP BY match_id
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Db/Driver/Mysql/MysqlPdo.php
+LINE: 132
+TRACE:array (
+  0 => 
+  array (
+    'line' => 93,
+    'function' => 'prepare',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Db/Driver/Mysql/MysqlPdo.php',
+    'class' => 'Elf\\Db\\Driver\\Mysql\\MysqlPdo',
+  ),
+  1 => 
+  array (
+    'line' => 114,
+    'function' => 'execute',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Db/SqlBuilder/BaseSql.php',
+    'class' => 'Elf\\Db\\Driver\\Mysql\\MysqlPdo',
+  ),
+  2 => 
+  array (
+    'line' => 166,
+    'function' => 'execute',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php',
+    'class' => 'Elf\\Db\\SqlBuilder\\BaseSql',
+  ),
+  3 => 
+  array (
+    'line' => '',
+    'function' => 'actionOdds',
+    'file' => '',
+    'class' => 'app\\controller\\nba\\CollectController',
+  ),
+  4 => 
+  array (
+    'line' => 60,
+    'function' => 'call_user_func',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => '',
+  ),
+  5 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  6 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  7 => 
+  array (
+    'line' => 56,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171217-20:35:15(1513514115)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionodds
+content 	:
+TYPE:error 
+ERROR:	Argument 2 passed to Elf\Model\CoreModel::find() must be of the type array, string given, called in /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php on line 165 and defined
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Model/CoreModel.php
+LINE: 112
+-------------------------------------------------------

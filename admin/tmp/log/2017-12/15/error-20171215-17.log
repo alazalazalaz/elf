@@ -1,0 +1,66 @@
+
+-------------------------------------------------------
+time 		:20171215-17:04:13(1513328653)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionodds
+content 	:
+TYPE:error 
+ERROR:	syntax error, unexpected ';', expecting ']'
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php
+LINE: 487
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171215-17:04:35(1513328675)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionodds
+content 	:
+TYPE:error 
+ERROR:	syntax error, unexpected ']'
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php
+LINE: 489
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171215-17:30:03(1513330203)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionodds
+content 	:
+TYPE:error 
+ERROR:	Invalid argument supplied for foreach()
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php
+LINE: 508
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171215-17:30:14(1513330214)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionodds
+content 	:
+TYPE:error 
+ERROR:	Undefined variable: itemv
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php
+LINE: 517
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171215-17:30:56(1513330256)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionodds
+content 	:
+TYPE:error 
+ERROR:	Undefined variable: itemv
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php
+LINE: 517
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171215-17:39:46(1513330786)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionodds
+content 	:
+TYPE:error 
+ERROR:	Using $this when not in object context
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/model/nba/MatchListModel.php
+LINE: 25
+-------------------------------------------------------

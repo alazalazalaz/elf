@@ -1,0 +1,110 @@
+
+-------------------------------------------------------
+time 		:20171215-16:32:05(1513326725)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionodds
+content 	:
+TYPE:error 
+ERROR:	Call to undefined method Elf\Db\SqlBuilder\Sql::all()
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php
+LINE: 160
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171215-16:32:22(1513326742)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionodds
+content 	:
+TYPE:error 
+ERROR:	Call to undefined method Elf\Db\SqlBuilder\Sql::all()
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php
+LINE: 160
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171215-16:32:41(1513326761)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionodds
+content 	:
+TYPE:error 
+ERROR:	Call to undefined method Elf\Db\SqlBuilder\Sql::excute()
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php
+LINE: 160
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171215-16:33:00(1513326780)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionodds
+content 	:
+TYPE:error 
+ERROR:	Call to undefined method Elf\Db\SqlBuilder\Sql::excute()
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php
+LINE: 160
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171215-16:38:52(1513327132)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionodds
+content 	:
+TYPE:error 
+ERROR:	syntax error, unexpected ';', expecting ']'
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php
+LINE: 181
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171215-16:38:59(1513327139)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionodds
+content 	:
+TYPE:error 
+ERROR:	Class 'app\controller\nba\MatchOdds' not found
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php
+LINE: 167
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171215-16:39:12(1513327152)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionodds
+content 	:
+TYPE:error 
+ERROR:	Class 'app\model\nba\MatchOdds' not found
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php
+LINE: 169
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171215-16:39:26(1513327166)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionodds
+content 	:
+TYPE:error 
+ERROR:	Class 'app\controller\nba\MatchOdds' not found
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php
+LINE: 169
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171215-16:39:58(1513327198)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionodds
+content 	:
+TYPE:error 
+ERROR:	Illegal string offset 'id'
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php
+LINE: 183
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171215-16:59:33(1513328373)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionodds
+content 	:
+TYPE:error 
+ERROR:	Undefined variable: oddsType
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php
+LINE: 168
+-------------------------------------------------------

@@ -1,0 +1,163 @@
+
+-------------------------------------------------------
+time 		:20171213-19:28:23(1513164503)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\preprocessController\actionpower
+content 	:
+TYPE:error 
+ERROR:	syntax error, unexpected ';', expecting ']'
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/preprocessController.php
+LINE: 97
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171213-19:28:30(1513164510)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\preprocessController\actionpower
+content 	:
+TYPE:exception 
+ERROR:	SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Db/Statement/PdoStatement.php
+LINE: 47
+TRACE:array (
+  0 => 
+  array (
+    'line' => 47,
+    'function' => 'bindValue',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Db/Statement/PdoStatement.php',
+    'class' => 'PDOStatement',
+  ),
+  1 => 
+  array (
+    'line' => 96,
+    'function' => 'bindValue',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Db/Driver/Mysql/MysqlPdo.php',
+    'class' => 'Elf\\Db\\Statement\\PdoStatement',
+  ),
+  2 => 
+  array (
+    'line' => 114,
+    'function' => 'execute',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Db/SqlBuilder/BaseSql.php',
+    'class' => 'Elf\\Db\\Driver\\Mysql\\MysqlPdo',
+  ),
+  3 => 
+  array (
+    'line' => 65,
+    'function' => 'execute',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/preprocessController.php',
+    'class' => 'Elf\\Db\\SqlBuilder\\BaseSql',
+  ),
+  4 => 
+  array (
+    'line' => '',
+    'function' => 'actionPower',
+    'file' => '',
+    'class' => 'app\\controller\\nba\\PreprocessController',
+  ),
+  5 => 
+  array (
+    'line' => 60,
+    'function' => 'call_user_func',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => '',
+  ),
+  6 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  7 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  8 => 
+  array (
+    'line' => 56,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171213-19:36:42(1513165002)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\preprocessController\actionpower
+content 	:
+TYPE:exception 
+ERROR:	SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '440' for key 'mid'
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Db/Statement/PdoStatement.php
+LINE: 54
+TRACE:array (
+  0 => 
+  array (
+    'line' => 54,
+    'function' => 'execute',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Db/Statement/PdoStatement.php',
+    'class' => 'PDOStatement',
+  ),
+  1 => 
+  array (
+    'line' => 99,
+    'function' => 'execute',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Db/Driver/Mysql/MysqlPdo.php',
+    'class' => 'Elf\\Db\\Statement\\PdoStatement',
+  ),
+  2 => 
+  array (
+    'line' => 114,
+    'function' => 'execute',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Db/SqlBuilder/BaseSql.php',
+    'class' => 'Elf\\Db\\Driver\\Mysql\\MysqlPdo',
+  ),
+  3 => 
+  array (
+    'line' => 123,
+    'function' => 'execute',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/preprocessController.php',
+    'class' => 'Elf\\Db\\SqlBuilder\\BaseSql',
+  ),
+  4 => 
+  array (
+    'line' => '',
+    'function' => 'actionPower',
+    'file' => '',
+    'class' => 'app\\controller\\nba\\PreprocessController',
+  ),
+  5 => 
+  array (
+    'line' => 60,
+    'function' => 'call_user_func',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => '',
+  ),
+  6 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  7 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  8 => 
+  array (
+    'line' => 56,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------

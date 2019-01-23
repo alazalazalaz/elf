@@ -1,0 +1,94 @@
+
+-------------------------------------------------------
+time 		:20171210-00:09:52(1512835792)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionindex
+content 	:
+TYPE:exception 
+ERROR:	数据库配置nba不存在
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Db/Database.php
+LINE: 68
+TRACE:array (
+  0 => 
+  array (
+    'line' => 53,
+    'function' => 'loadDbConfig',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Db/Database.php',
+    'class' => 'Elf\\Db\\Database',
+  ),
+  1 => 
+  array (
+    'line' => 38,
+    'function' => 'connect',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Db/Database.php',
+    'class' => 'Elf\\Db\\Database',
+  ),
+  2 => 
+  array (
+    'line' => 22,
+    'function' => 'db',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Db/Db.php',
+    'class' => 'Elf\\Db\\Database',
+  ),
+  3 => 
+  array (
+    'line' => 117,
+    'function' => 'db',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Model/CoreModel.php',
+    'class' => 'Elf\\Db\\Db',
+  ),
+  4 => 
+  array (
+    'line' => 31,
+    'function' => 'find',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php',
+    'class' => 'Elf\\Model\\CoreModel',
+  ),
+  5 => 
+  array (
+    'line' => '',
+    'function' => 'actionindex',
+    'file' => '',
+    'class' => 'app\\controller\\nba\\CollectController',
+  ),
+  6 => 
+  array (
+    'line' => 60,
+    'function' => 'call_user_func',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => '',
+  ),
+  7 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  8 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  9 => 
+  array (
+    'line' => 56,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171210-00:10:40(1512835840)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionindex
+content 	:
+TYPE:error 
+ERROR:	Call to a member function all() on array
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php
+LINE: 31
+-------------------------------------------------------

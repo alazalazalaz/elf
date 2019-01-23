@@ -1,0 +1,22 @@
+
+-------------------------------------------------------
+time 		:20190123-10:45:41(1548211541)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionmatch
+content 	:
+TYPE:error 
+ERROR:	unpack(): Type L: not enough input, need 4, have 1
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php
+LINE: 204
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20190123-10:50:20(1548211820)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionmatch
+content 	:
+TYPE:error 
+ERROR:	pack(): Type L: too few arguments
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php
+LINE: 203
+-------------------------------------------------------

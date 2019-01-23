@@ -1,0 +1,22 @@
+
+-------------------------------------------------------
+time 		:20171211-19:11:57(1512990717)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionmatch
+content 	:
+TYPE:error 
+ERROR:	preg_match(): Compilation failed: nothing to repeat at offset 12
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php
+LINE: 68
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171211-19:12:18(1512990738)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionmatch
+content 	:
+TYPE:error 
+ERROR:	preg_match(): Compilation failed: nothing to repeat at offset 10
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php
+LINE: 68
+-------------------------------------------------------

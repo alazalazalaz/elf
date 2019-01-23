@@ -1,0 +1,22 @@
+
+-------------------------------------------------------
+time 		:20180311-18:08:24(1520762904)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionmatch
+content 	:
+TYPE:error 
+ERROR:	Undefined variable: re
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php
+LINE: 257
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20180311-18:14:31(1520763271)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionmatch
+content 	:
+TYPE:error 
+ERROR:	Undefined variable: b
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php
+LINE: 253
+-------------------------------------------------------

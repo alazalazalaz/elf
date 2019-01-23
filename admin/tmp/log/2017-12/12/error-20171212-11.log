@@ -1,0 +1,11 @@
+
+-------------------------------------------------------
+time 		:20171212-11:06:32(1513047992)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionalgtotal
+content 	:
+TYPE:error 
+ERROR:	Undefined index: match_time
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php
+LINE: 92
+-------------------------------------------------------

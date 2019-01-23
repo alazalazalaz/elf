@@ -1,0 +1,393 @@
+
+-------------------------------------------------------
+time 		:20171210-21:29:29(1512912569)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionmatch
+content 	:
+TYPE:error 
+ERROR:	syntax error, unexpected ';', expecting ']'
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php
+LINE: 70
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171210-21:43:35(1512913415)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionmatch
+content 	:
+TYPE:exception 
+ERROR:	SQLSTATE[HY000]: General error: 1364 Field 'host_id' doesn't have a default value
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Db/Statement/PdoStatement.php
+LINE: 54
+TRACE:array (
+  0 => 
+  array (
+    'line' => 54,
+    'function' => 'execute',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Db/Statement/PdoStatement.php',
+    'class' => 'PDOStatement',
+  ),
+  1 => 
+  array (
+    'line' => 99,
+    'function' => 'execute',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Db/Driver/Mysql/MysqlPdo.php',
+    'class' => 'Elf\\Db\\Statement\\PdoStatement',
+  ),
+  2 => 
+  array (
+    'line' => 114,
+    'function' => 'execute',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Db/SqlBuilder/BaseSql.php',
+    'class' => 'Elf\\Db\\Driver\\Mysql\\MysqlPdo',
+  ),
+  3 => 
+  array (
+    'line' => 74,
+    'function' => 'execute',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Model/CoreModel.php',
+    'class' => 'Elf\\Db\\SqlBuilder\\BaseSql',
+  ),
+  4 => 
+  array (
+    'line' => 91,
+    'function' => 'save',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php',
+    'class' => 'Elf\\Model\\CoreModel',
+  ),
+  5 => 
+  array (
+    'line' => '',
+    'function' => 'actionmatch',
+    'file' => '',
+    'class' => 'app\\controller\\nba\\CollectController',
+  ),
+  6 => 
+  array (
+    'line' => 60,
+    'function' => 'call_user_func',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => '',
+  ),
+  7 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  8 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  9 => 
+  array (
+    'line' => 56,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171210-21:49:34(1512913774)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionmatch
+content 	:
+TYPE:error 
+ERROR:	Call to a member function where() on array
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php
+LINE: 97
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171210-21:52:59(1512913979)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionmatch
+content 	:
+TYPE:exception 
+ERROR:	SQLSTATE[HY000]: General error: 1364 Field 'match_time' doesn't have a default value
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Db/Statement/PdoStatement.php
+LINE: 54
+TRACE:array (
+  0 => 
+  array (
+    'line' => 54,
+    'function' => 'execute',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Db/Statement/PdoStatement.php',
+    'class' => 'PDOStatement',
+  ),
+  1 => 
+  array (
+    'line' => 99,
+    'function' => 'execute',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Db/Driver/Mysql/MysqlPdo.php',
+    'class' => 'Elf\\Db\\Statement\\PdoStatement',
+  ),
+  2 => 
+  array (
+    'line' => 114,
+    'function' => 'execute',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Db/SqlBuilder/BaseSql.php',
+    'class' => 'Elf\\Db\\Driver\\Mysql\\MysqlPdo',
+  ),
+  3 => 
+  array (
+    'line' => 74,
+    'function' => 'execute',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Model/CoreModel.php',
+    'class' => 'Elf\\Db\\SqlBuilder\\BaseSql',
+  ),
+  4 => 
+  array (
+    'line' => 112,
+    'function' => 'save',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php',
+    'class' => 'Elf\\Model\\CoreModel',
+  ),
+  5 => 
+  array (
+    'line' => '',
+    'function' => 'actionmatch',
+    'file' => '',
+    'class' => 'app\\controller\\nba\\CollectController',
+  ),
+  6 => 
+  array (
+    'line' => 60,
+    'function' => 'call_user_func',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => '',
+  ),
+  7 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  8 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  9 => 
+  array (
+    'line' => 56,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171210-21:59:57(1512914397)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\StyleController\actionTechStyle
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\StyleController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 56,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171210-21:59:57(1512914397)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\ScriptController\actionBomHelper
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\ScriptController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 56,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171210-21:59:57(1512914397)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\ScriptController\actioncn
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\ScriptController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 56,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171210-21:59:57(1512914397)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\imagesController\actionTechImage
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\imagesController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 56,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171210-21:59:57(1512914397)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\imagesController\actionTechImage
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\imagesController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 56,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------

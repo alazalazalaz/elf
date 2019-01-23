@@ -39,7 +39,7 @@ class Container
 		}
 
 		$objectKey = empty($param) ? substr(md5($className), 0, 10) : substr(md5($className . serialize($param)), 0, 10);
-$testStr = '<br>no create ' . $className;
+
 		if (!isset(self::$_reflections[$objectKey])) {
 			$ref = new ReflectionClass($className);
 			if (empty($param)) {
@@ -50,7 +50,7 @@ $testStr = '<br>no create ' . $className;
 				self::$_reflections[$objectKey] 	= $ref->newInstanceArgs($param);
 			}
 		}
-echo $testStr;
+
 		return self::$_reflections[$objectKey];
 	}
 

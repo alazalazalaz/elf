@@ -1,0 +1,101 @@
+
+-------------------------------------------------------
+time 		:20171211-21:41:54(1512999714)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionmatch
+content 	:
+TYPE:exception 
+ERROR:	SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'match_time' at row 1
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Db/Statement/PdoStatement.php
+LINE: 54
+TRACE:array (
+  0 => 
+  array (
+    'line' => 54,
+    'function' => 'execute',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Db/Statement/PdoStatement.php',
+    'class' => 'PDOStatement',
+  ),
+  1 => 
+  array (
+    'line' => 99,
+    'function' => 'execute',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Db/Driver/Mysql/MysqlPdo.php',
+    'class' => 'Elf\\Db\\Statement\\PdoStatement',
+  ),
+  2 => 
+  array (
+    'line' => 114,
+    'function' => 'execute',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Db/SqlBuilder/BaseSql.php',
+    'class' => 'Elf\\Db\\Driver\\Mysql\\MysqlPdo',
+  ),
+  3 => 
+  array (
+    'line' => 74,
+    'function' => 'execute',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Model/CoreModel.php',
+    'class' => 'Elf\\Db\\SqlBuilder\\BaseSql',
+  ),
+  4 => 
+  array (
+    'line' => 123,
+    'function' => 'save',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php',
+    'class' => 'Elf\\Model\\CoreModel',
+  ),
+  5 => 
+  array (
+    'line' => 56,
+    'function' => 'matchList',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php',
+    'class' => 'app\\controller\\nba\\CollectController',
+  ),
+  6 => 
+  array (
+    'line' => '',
+    'function' => 'actionmatch',
+    'file' => '',
+    'class' => 'app\\controller\\nba\\CollectController',
+  ),
+  7 => 
+  array (
+    'line' => 60,
+    'function' => 'call_user_func',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => '',
+  ),
+  8 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  9 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  10 => 
+  array (
+    'line' => 56,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171211-21:49:18(1513000158)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionmatch
+content 	:
+TYPE:error 
+ERROR:	Call to a member function all() on array
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php
+LINE: 109
+-------------------------------------------------------

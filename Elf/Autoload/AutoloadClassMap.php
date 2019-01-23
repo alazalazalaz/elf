@@ -43,6 +43,7 @@ return array(
 	'Elf\Lib\Request'					=> ELF_PATH . 'Routing/Request.php',
 	'Elf\Lib\Response'					=> ELF_PATH . 'Routing/Response.php',
 	'Elf\Lib\File'						=> ELF_PATH . 'Lib/File/File.php',
+	'Elf\Lib\Curl'						=> ELF_PATH . 'Lib/Curl/Curl.php',
 
 	'Elf\Model'							=> ELF_PATH . 'Model/Model.php',
 

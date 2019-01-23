@@ -1,0 +1,157 @@
+
+-------------------------------------------------------
+time 		:20190123-09:42:14(1548207734)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\indexController\actionIndex
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\indexController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 56,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20190123-09:42:44(1548207764)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nbaController\actioncollect
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\nbaController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 56,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20190123-09:42:49(1548207769)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\indexController\actionIndex
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\indexController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 56,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20190123-09:42:53(1548207773)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionmastch
+content 	:
+TYPE:exception 
+ERROR:	控制器collectController找不到方法：actionmastch()
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 45
+TRACE:array (
+  0 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  1 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  2 => 
+  array (
+    'line' => 56,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------

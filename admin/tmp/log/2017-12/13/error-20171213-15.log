@@ -1,0 +1,22 @@
+
+-------------------------------------------------------
+time 		:20171213-15:14:18(1513149258)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionmatchlist
+content 	:
+TYPE:error 
+ERROR:	syntax error, unexpected '$re' (T_VARIABLE)
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php
+LINE: 157
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171213-15:15:03(1513149303)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionmatch
+content 	:
+TYPE:error 
+ERROR:	syntax error, unexpected '$re' (T_VARIABLE)
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php
+LINE: 157
+-------------------------------------------------------

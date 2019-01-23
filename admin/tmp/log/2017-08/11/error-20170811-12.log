@@ -1,0 +1,2952 @@
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\indexController\actionIndex
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\indexController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\cssController\actionfile_upload
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\cssController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionkartik
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionkartik
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\jsController\actionsf
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\jsController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:03(1502424063)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:04(1502424064)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:04(1502424064)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:04(1502424064)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:04(1502424064)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:04(1502424064)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:04(1502424064)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:04(1502424064)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:04(1502424064)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:04(1502424064)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:04(1502424064)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:04(1502424064)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:04(1502424064)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:04(1502424064)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:04(1502424064)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:04(1502424064)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionassets
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:04(1502424064)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionkartik
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:04(1502424064)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\cssController\actionfile_upload
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\cssController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:04(1502424064)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\themeController\actionkartik
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\themeController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170811-12:01:04(1502424064)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\jsController\actionsf
+content 	:
+TYPE:exception 
+ERROR:	Class app\controller\jsController does not exist
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php
+LINE: 27
+TRACE:array (
+  0 => 
+  array (
+    'line' => 27,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => 'ReflectionClass',
+  ),
+  1 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  2 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  3 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------

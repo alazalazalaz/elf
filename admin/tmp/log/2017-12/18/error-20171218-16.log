@@ -1,0 +1,33 @@
+
+-------------------------------------------------------
+time 		:20171218-16:47:32(1513586852)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\preprocessController\actionpower
+content 	:
+TYPE:error 
+ERROR:	Undefined variable: where
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/preprocessController.php
+LINE: 134
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171218-16:49:24(1513586964)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\preprocessController\actionpower
+content 	:
+TYPE:error 
+ERROR:	Undefined variable: where
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/preprocessController.php
+LINE: 137
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171218-16:49:33(1513586973)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\preprocessController\actionpower
+content 	:
+TYPE:error 
+ERROR:	Call to undefined method Elf\Db\SqlBuilder\Sql::excute()
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/preprocessController.php
+LINE: 139
+-------------------------------------------------------

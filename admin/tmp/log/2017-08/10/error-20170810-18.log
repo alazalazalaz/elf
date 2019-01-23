@@ -1,0 +1,684 @@
+
+-------------------------------------------------------
+time 		:20170810-18:12:11(1502359931)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\lotteryController\actionindex
+content 	:
+TYPE:error 
+ERROR:	syntax error, unexpected '$header' (T_VARIABLE)
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/View/SmartyView.php
+LINE: 55
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170810-18:27:09(1502360829)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\lotteryController\actionindex
+content 	:
+TYPE:exception 
+ERROR:	Unable to load template 'extends:layouts/header.tpl|/Users/zhangxiong/work/www/my/elf/elf/app/view/lottery/index.tpl'
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_internal_template.php
+LINE: 163
+TRACE:array (
+  0 => 
+  array (
+    'line' => 199,
+    'function' => 'render',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_internal_templatebase.php',
+    'class' => 'Smarty_Internal_Template',
+  ),
+  1 => 
+  array (
+    'line' => 114,
+    'function' => '_execute',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_internal_templatebase.php',
+    'class' => 'Smarty_Internal_TemplateBase',
+  ),
+  2 => 
+  array (
+    'line' => 57,
+    'function' => 'display',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/View/SmartyView.php',
+    'class' => 'Smarty_Internal_TemplateBase',
+  ),
+  3 => 
+  array (
+    'line' => 61,
+    'function' => 'view',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Controller/CoreController.php',
+    'class' => 'Elf\\View\\SmartyView',
+  ),
+  4 => 
+  array (
+    'line' => 22,
+    'function' => 'view',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/app/controller/lotteryController.php',
+    'class' => 'Elf\\Controller\\CoreController',
+  ),
+  5 => 
+  array (
+    'line' => '',
+    'function' => 'actionindex',
+    'file' => '',
+    'class' => 'app\\controller\\LotteryController',
+  ),
+  6 => 
+  array (
+    'line' => 60,
+    'function' => 'call_user_func',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => '',
+  ),
+  7 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  8 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  9 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170810-18:27:25(1502360845)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\lotteryController\actionindex
+content 	:
+TYPE:exception 
+ERROR:	Unable to load template 'extends:/layouts/header.tpl|/Users/zhangxiong/work/www/my/elf/elf/app/view/lottery/index.tpl'
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_internal_template.php
+LINE: 163
+TRACE:array (
+  0 => 
+  array (
+    'line' => 199,
+    'function' => 'render',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_internal_templatebase.php',
+    'class' => 'Smarty_Internal_Template',
+  ),
+  1 => 
+  array (
+    'line' => 114,
+    'function' => '_execute',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_internal_templatebase.php',
+    'class' => 'Smarty_Internal_TemplateBase',
+  ),
+  2 => 
+  array (
+    'line' => 57,
+    'function' => 'display',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/View/SmartyView.php',
+    'class' => 'Smarty_Internal_TemplateBase',
+  ),
+  3 => 
+  array (
+    'line' => 61,
+    'function' => 'view',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Controller/CoreController.php',
+    'class' => 'Elf\\View\\SmartyView',
+  ),
+  4 => 
+  array (
+    'line' => 22,
+    'function' => 'view',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/app/controller/lotteryController.php',
+    'class' => 'Elf\\Controller\\CoreController',
+  ),
+  5 => 
+  array (
+    'line' => '',
+    'function' => 'actionindex',
+    'file' => '',
+    'class' => 'app\\controller\\LotteryController',
+  ),
+  6 => 
+  array (
+    'line' => 60,
+    'function' => 'call_user_func',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => '',
+  ),
+  7 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  8 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  9 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170810-18:28:00(1502360880)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\lotteryController\actionindex
+content 	:
+TYPE:exception 
+ERROR:	Unable to load template 'extends:/Users/zhangxiong/work/www/my/elf/elf/app/view/layouts/headder.tpl|/Users/zhangxiong/work/www/my/elf/elf/app/view/lottery/index.tpl'
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_internal_template.php
+LINE: 163
+TRACE:array (
+  0 => 
+  array (
+    'line' => 199,
+    'function' => 'render',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_internal_templatebase.php',
+    'class' => 'Smarty_Internal_Template',
+  ),
+  1 => 
+  array (
+    'line' => 114,
+    'function' => '_execute',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_internal_templatebase.php',
+    'class' => 'Smarty_Internal_TemplateBase',
+  ),
+  2 => 
+  array (
+    'line' => 57,
+    'function' => 'display',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/View/SmartyView.php',
+    'class' => 'Smarty_Internal_TemplateBase',
+  ),
+  3 => 
+  array (
+    'line' => 61,
+    'function' => 'view',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Controller/CoreController.php',
+    'class' => 'Elf\\View\\SmartyView',
+  ),
+  4 => 
+  array (
+    'line' => 22,
+    'function' => 'view',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/app/controller/lotteryController.php',
+    'class' => 'Elf\\Controller\\CoreController',
+  ),
+  5 => 
+  array (
+    'line' => '',
+    'function' => 'actionindex',
+    'file' => '',
+    'class' => 'app\\controller\\LotteryController',
+  ),
+  6 => 
+  array (
+    'line' => 60,
+    'function' => 'call_user_func',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => '',
+  ),
+  7 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  8 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  9 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170810-18:30:36(1502361036)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\lotteryController\actionindex
+content 	:
+TYPE:exception 
+ERROR:	Unable to load template 'file:header.tpl' in '/Users/zhangxiong/work/www/my/elf/elf/app/view/lottery/index.tpl'
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_internal_template.php
+LINE: 163
+TRACE:array (
+  0 => 
+  array (
+    'line' => 350,
+    'function' => 'render',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_internal_template.php',
+    'class' => 'Smarty_Internal_Template',
+  ),
+  1 => 
+  array (
+    'line' => 34,
+    'function' => '_subTemplateRender',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/app/tmp/smarty/templates_c/a64665d208df0f49c84f5b001b3878d727de43c7_0.file.index.tpl.php',
+    'class' => 'Smarty_Internal_Template',
+  ),
+  2 => 
+  array (
+    'line' => 128,
+    'function' => 'content_598c35cc647219_68351999',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_template_resource_base.php',
+    'class' => '',
+  ),
+  3 => 
+  array (
+    'line' => 170,
+    'function' => 'getRenderedTemplateCode',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_template_compiled.php',
+    'class' => 'Smarty_Template_Resource_Base',
+  ),
+  4 => 
+  array (
+    'line' => 184,
+    'function' => 'render',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_internal_template.php',
+    'class' => 'Smarty_Template_Compiled',
+  ),
+  5 => 
+  array (
+    'line' => 199,
+    'function' => 'render',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_internal_templatebase.php',
+    'class' => 'Smarty_Internal_Template',
+  ),
+  6 => 
+  array (
+    'line' => 114,
+    'function' => '_execute',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_internal_templatebase.php',
+    'class' => 'Smarty_Internal_TemplateBase',
+  ),
+  7 => 
+  array (
+    'line' => 54,
+    'function' => 'display',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/View/SmartyView.php',
+    'class' => 'Smarty_Internal_TemplateBase',
+  ),
+  8 => 
+  array (
+    'line' => 61,
+    'function' => 'view',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Controller/CoreController.php',
+    'class' => 'Elf\\View\\SmartyView',
+  ),
+  9 => 
+  array (
+    'line' => 22,
+    'function' => 'view',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/app/controller/lotteryController.php',
+    'class' => 'Elf\\Controller\\CoreController',
+  ),
+  10 => 
+  array (
+    'line' => '',
+    'function' => 'actionindex',
+    'file' => '',
+    'class' => 'app\\controller\\LotteryController',
+  ),
+  11 => 
+  array (
+    'line' => 60,
+    'function' => 'call_user_func',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => '',
+  ),
+  12 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  13 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  14 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170810-18:56:25(1502362585)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\lotteryController\actionindex
+content 	:
+TYPE:exception 
+ERROR:	Unable to load template 'file:header.tpl' in 'file:../layouts/main.tpl'
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_internal_template.php
+LINE: 163
+TRACE:array (
+  0 => 
+  array (
+    'line' => 350,
+    'function' => 'render',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_internal_template.php',
+    'class' => 'Smarty_Internal_Template',
+  ),
+  1 => 
+  array (
+    'line' => 31,
+    'function' => '_subTemplateRender',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/app/tmp/smarty/templates_c/9f0ebe2b97aeb3a4a60d10cf9bfba38f17704757_0.file.main.tpl.php',
+    'class' => 'Smarty_Internal_Template',
+  ),
+  2 => 
+  array (
+    'line' => 128,
+    'function' => 'content_598c3bd9a21cd1_30196649',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_template_resource_base.php',
+    'class' => '',
+  ),
+  3 => 
+  array (
+    'line' => 170,
+    'function' => 'getRenderedTemplateCode',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_template_compiled.php',
+    'class' => 'Smarty_Template_Resource_Base',
+  ),
+  4 => 
+  array (
+    'line' => 184,
+    'function' => 'render',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_internal_template.php',
+    'class' => 'Smarty_Template_Compiled',
+  ),
+  5 => 
+  array (
+    'line' => 350,
+    'function' => 'render',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_internal_template.php',
+    'class' => 'Smarty_Internal_Template',
+  ),
+  6 => 
+  array (
+    'line' => 34,
+    'function' => '_subTemplateRender',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/app/tmp/smarty/templates_c/a64665d208df0f49c84f5b001b3878d727de43c7_0.file.index.tpl.php',
+    'class' => 'Smarty_Internal_Template',
+  ),
+  7 => 
+  array (
+    'line' => 128,
+    'function' => 'content_598c3bd9a1a1d9_38530581',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_template_resource_base.php',
+    'class' => '',
+  ),
+  8 => 
+  array (
+    'line' => 170,
+    'function' => 'getRenderedTemplateCode',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_template_compiled.php',
+    'class' => 'Smarty_Template_Resource_Base',
+  ),
+  9 => 
+  array (
+    'line' => 184,
+    'function' => 'render',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_internal_template.php',
+    'class' => 'Smarty_Template_Compiled',
+  ),
+  10 => 
+  array (
+    'line' => 199,
+    'function' => 'render',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_internal_templatebase.php',
+    'class' => 'Smarty_Internal_Template',
+  ),
+  11 => 
+  array (
+    'line' => 114,
+    'function' => '_execute',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_internal_templatebase.php',
+    'class' => 'Smarty_Internal_TemplateBase',
+  ),
+  12 => 
+  array (
+    'line' => 54,
+    'function' => 'display',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/View/SmartyView.php',
+    'class' => 'Smarty_Internal_TemplateBase',
+  ),
+  13 => 
+  array (
+    'line' => 61,
+    'function' => 'view',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Controller/CoreController.php',
+    'class' => 'Elf\\View\\SmartyView',
+  ),
+  14 => 
+  array (
+    'line' => 22,
+    'function' => 'view',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/app/controller/lotteryController.php',
+    'class' => 'Elf\\Controller\\CoreController',
+  ),
+  15 => 
+  array (
+    'line' => '',
+    'function' => 'actionindex',
+    'file' => '',
+    'class' => 'app\\controller\\LotteryController',
+  ),
+  16 => 
+  array (
+    'line' => 60,
+    'function' => 'call_user_func',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => '',
+  ),
+  17 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  18 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  19 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170810-18:56:43(1502362603)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\lotteryController\actionindex
+content 	:
+TYPE:exception 
+ERROR:	Unable to load template 'file:footer.tpl' in 'file:../layouts/main.tpl'
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_internal_template.php
+LINE: 163
+TRACE:array (
+  0 => 
+  array (
+    'line' => 350,
+    'function' => 'render',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_internal_template.php',
+    'class' => 'Smarty_Internal_Template',
+  ),
+  1 => 
+  array (
+    'line' => 33,
+    'function' => '_subTemplateRender',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/app/tmp/smarty/templates_c/9f0ebe2b97aeb3a4a60d10cf9bfba38f17704757_0.file.main.tpl.php',
+    'class' => 'Smarty_Internal_Template',
+  ),
+  2 => 
+  array (
+    'line' => 128,
+    'function' => 'content_598c3beb34ce51_70361732',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_template_resource_base.php',
+    'class' => '',
+  ),
+  3 => 
+  array (
+    'line' => 170,
+    'function' => 'getRenderedTemplateCode',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_template_compiled.php',
+    'class' => 'Smarty_Template_Resource_Base',
+  ),
+  4 => 
+  array (
+    'line' => 184,
+    'function' => 'render',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_internal_template.php',
+    'class' => 'Smarty_Template_Compiled',
+  ),
+  5 => 
+  array (
+    'line' => 350,
+    'function' => 'render',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_internal_template.php',
+    'class' => 'Smarty_Internal_Template',
+  ),
+  6 => 
+  array (
+    'line' => 34,
+    'function' => '_subTemplateRender',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/app/tmp/smarty/templates_c/a64665d208df0f49c84f5b001b3878d727de43c7_0.file.index.tpl.php',
+    'class' => 'Smarty_Internal_Template',
+  ),
+  7 => 
+  array (
+    'line' => 128,
+    'function' => 'content_598c3beb33aff9_81377223',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_template_resource_base.php',
+    'class' => '',
+  ),
+  8 => 
+  array (
+    'line' => 170,
+    'function' => 'getRenderedTemplateCode',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_template_compiled.php',
+    'class' => 'Smarty_Template_Resource_Base',
+  ),
+  9 => 
+  array (
+    'line' => 184,
+    'function' => 'render',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_internal_template.php',
+    'class' => 'Smarty_Template_Compiled',
+  ),
+  10 => 
+  array (
+    'line' => 199,
+    'function' => 'render',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_internal_templatebase.php',
+    'class' => 'Smarty_Internal_Template',
+  ),
+  11 => 
+  array (
+    'line' => 114,
+    'function' => '_execute',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_internal_templatebase.php',
+    'class' => 'Smarty_Internal_TemplateBase',
+  ),
+  12 => 
+  array (
+    'line' => 54,
+    'function' => 'display',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/View/SmartyView.php',
+    'class' => 'Smarty_Internal_TemplateBase',
+  ),
+  13 => 
+  array (
+    'line' => 61,
+    'function' => 'view',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Controller/CoreController.php',
+    'class' => 'Elf\\View\\SmartyView',
+  ),
+  14 => 
+  array (
+    'line' => 22,
+    'function' => 'view',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/app/controller/lotteryController.php',
+    'class' => 'Elf\\Controller\\CoreController',
+  ),
+  15 => 
+  array (
+    'line' => '',
+    'function' => 'actionindex',
+    'file' => '',
+    'class' => 'app\\controller\\LotteryController',
+  ),
+  16 => 
+  array (
+    'line' => 60,
+    'function' => 'call_user_func',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => '',
+  ),
+  17 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  18 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  19 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------

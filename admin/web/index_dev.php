@@ -4,7 +4,6 @@
  */
 
 
-
 define('DS', DIRECTORY_SEPARATOR);
 define('ROOT_PATH', realpath(dirname(dirname(__FILE__))) . DS); 	//eg:\
 define('BASE_APP_PATH', ROOT_PATH  . 'app' . DS);					//eg:\app\
@@ -35,7 +34,7 @@ define('APP_NS', BASE_APP_NS);
  * 配置当前域名
  * eg:www.baidu.com 请配置为baidu
  */
-define('DOMAIN_NAME', 'elf');
+// define('DOMAIN_NAME', 'elf');
 
 define("WEB_DOMAIN", '//local.elf.com/metronic_v3.6');
 
@@ -46,7 +45,7 @@ header("Content-Type:text/html;charset=utf8");
  */
 
 // $framePath = '../../myFrame/Elf'; 							//请在这里配置框架的相对路径
-$framePath = '../Elf';
+$framePath = '../../Elf';
 
 define('ELF_PATH', realpath($framePath) . DS);
 

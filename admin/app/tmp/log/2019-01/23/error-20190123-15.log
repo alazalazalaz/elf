@@ -1,0 +1,33 @@
+
+-------------------------------------------------------
+time 		:20190123-15:33:00(1548228780)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/admin/app/
+request 	:controller\lotteryController\actionrecommend
+content 	:
+TYPE:error 
+ERROR:	Undefined index: cookieDomain
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php
+LINE: 120
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20190123-15:33:07(1548228787)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/admin/app/
+request 	:controller\lotteryController\actionrecommend
+content 	:
+TYPE:error 
+ERROR:	Undefined index: cookieDomain
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php
+LINE: 120
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20190123-15:33:10(1548228790)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/admin/app/
+request 	:controller\lotteryController\actionrecommend
+content 	:
+TYPE:error 
+ERROR:	Undefined index: cookieDomain
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php
+LINE: 120
+-------------------------------------------------------

@@ -1,0 +1,309 @@
+
+-------------------------------------------------------
+time 		:20171213-18:03:15(1513159395)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\preprocessController\actionindex
+content 	:
+TYPE:exception 
+ERROR:	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'between = ?' at line 1  <br>ERROR SQL:SELECT * FROM nba_match_list WHERE between = :between0
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Db/Driver/Mysql/MysqlPdo.php
+LINE: 132
+TRACE:array (
+  0 => 
+  array (
+    'line' => 93,
+    'function' => 'prepare',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Db/Driver/Mysql/MysqlPdo.php',
+    'class' => 'Elf\\Db\\Driver\\Mysql\\MysqlPdo',
+  ),
+  1 => 
+  array (
+    'line' => 114,
+    'function' => 'execute',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Db/SqlBuilder/BaseSql.php',
+    'class' => 'Elf\\Db\\Driver\\Mysql\\MysqlPdo',
+  ),
+  2 => 
+  array (
+    'line' => 141,
+    'function' => 'execute',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Model/CoreModel.php',
+    'class' => 'Elf\\Db\\SqlBuilder\\BaseSql',
+  ),
+  3 => 
+  array (
+    'line' => 28,
+    'function' => 'find',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/BaseController.php',
+    'class' => 'Elf\\Model\\CoreModel',
+  ),
+  4 => 
+  array (
+    'line' => 26,
+    'function' => 'getSessionData',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/preprocessController.php',
+    'class' => 'app\\controller\\nba\\BaseController',
+  ),
+  5 => 
+  array (
+    'line' => '',
+    'function' => 'actionIndex',
+    'file' => '',
+    'class' => 'app\\controller\\nba\\PreprocessController',
+  ),
+  6 => 
+  array (
+    'line' => 60,
+    'function' => 'call_user_func',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => '',
+  ),
+  7 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  8 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  9 => 
+  array (
+    'line' => 56,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171213-18:28:26(1513160906)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\preprocessController\actionpower
+content 	:
+TYPE:error 
+ERROR:	Invalid argument supplied for foreach()
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Db/SqlBuilder/BaseSql.php
+LINE: 289
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171213-18:28:35(1513160915)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\preprocessController\actionpower
+content 	:
+TYPE:error 
+ERROR:	Invalid argument supplied for foreach()
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Db/SqlBuilder/BaseSql.php
+LINE: 289
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171213-18:28:48(1513160928)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\preprocessController\actionpower
+content 	:
+TYPE:error 
+ERROR:	Invalid argument supplied for foreach()
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Db/SqlBuilder/BaseSql.php
+LINE: 289
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171213-18:28:59(1513160939)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\preprocessController\actionpower
+content 	:
+TYPE:error 
+ERROR:	Invalid argument supplied for foreach()
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Db/SqlBuilder/BaseSql.php
+LINE: 289
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171213-18:29:48(1513160988)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\preprocessController\actionpower
+content 	:
+TYPE:error 
+ERROR:	Invalid argument supplied for foreach()
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Db/SqlBuilder/BaseSql.php
+LINE: 289
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171213-18:30:25(1513161025)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\preprocessController\actionpower
+content 	:
+TYPE:exception 
+ERROR:	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE host_id = ?' at line 1  <br>ERROR SQL:SELECT * WHERE host_id = :host_id0
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Db/Driver/Mysql/MysqlPdo.php
+LINE: 132
+TRACE:array (
+  0 => 
+  array (
+    'line' => 93,
+    'function' => 'prepare',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Db/Driver/Mysql/MysqlPdo.php',
+    'class' => 'Elf\\Db\\Driver\\Mysql\\MysqlPdo',
+  ),
+  1 => 
+  array (
+    'line' => 114,
+    'function' => 'execute',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Db/SqlBuilder/BaseSql.php',
+    'class' => 'Elf\\Db\\Driver\\Mysql\\MysqlPdo',
+  ),
+  2 => 
+  array (
+    'line' => 53,
+    'function' => 'execute',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/preprocessController.php',
+    'class' => 'Elf\\Db\\SqlBuilder\\BaseSql',
+  ),
+  3 => 
+  array (
+    'line' => '',
+    'function' => 'actionPower',
+    'file' => '',
+    'class' => 'app\\controller\\nba\\PreprocessController',
+  ),
+  4 => 
+  array (
+    'line' => 60,
+    'function' => 'call_user_func',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => '',
+  ),
+  5 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  6 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  7 => 
+  array (
+    'line' => 56,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171213-18:31:28(1513161088)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\preprocessController\actionpower
+content 	:
+TYPE:error 
+ERROR:	Call to undefined method Elf\Db\SqlBuilder\Sql::andWhere()
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/preprocessController.php
+LINE: 53
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171213-18:32:16(1513161136)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\preprocessController\actionpower
+content 	:
+TYPE:exception 
+ERROR:	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'nba.nba_nba_list' doesn't exist  <br>ERROR SQL:SELECT * FROM nba_nba_list WHERE host_id = :host_id0 AND match_time < :match_time0
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Db/Driver/Mysql/MysqlPdo.php
+LINE: 132
+TRACE:array (
+  0 => 
+  array (
+    'line' => 93,
+    'function' => 'prepare',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Db/Driver/Mysql/MysqlPdo.php',
+    'class' => 'Elf\\Db\\Driver\\Mysql\\MysqlPdo',
+  ),
+  1 => 
+  array (
+    'line' => 114,
+    'function' => 'execute',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Db/SqlBuilder/BaseSql.php',
+    'class' => 'Elf\\Db\\Driver\\Mysql\\MysqlPdo',
+  ),
+  2 => 
+  array (
+    'line' => 54,
+    'function' => 'execute',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/preprocessController.php',
+    'class' => 'Elf\\Db\\SqlBuilder\\BaseSql',
+  ),
+  3 => 
+  array (
+    'line' => '',
+    'function' => 'actionPower',
+    'file' => '',
+    'class' => 'app\\controller\\nba\\PreprocessController',
+  ),
+  4 => 
+  array (
+    'line' => 60,
+    'function' => 'call_user_func',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => '',
+  ),
+  5 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  6 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  7 => 
+  array (
+    'line' => 56,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171213-18:33:57(1513161237)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\preprocessController\actionpower
+content 	:
+TYPE:error 
+ERROR:	Call to undefined method Elf\Db\SqlBuilder\Sql::excute()
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/preprocessController.php
+LINE: 53
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171213-18:38:27(1513161507)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\preprocessController\actionpower
+content 	:
+TYPE:error 
+ERROR:	Undefined variable: sessionBegin
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/preprocessController.php
+LINE: 37
+-------------------------------------------------------

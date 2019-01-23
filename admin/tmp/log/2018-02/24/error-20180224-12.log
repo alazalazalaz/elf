@@ -1,0 +1,76 @@
+
+-------------------------------------------------------
+time 		:20180224-12:29:58(1519446598)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\preprocessController\actionactpower
+content 	:
+TYPE:exception 
+ERROR:	SQLSTATE[HY000] [2002] No such file or directory
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Db/Driver/Mysql/MysqlPdo.php
+LINE: 61
+TRACE:array (
+  0 => 
+  array (
+    'line' => 61,
+    'function' => '__construct',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Db/Driver/Mysql/MysqlPdo.php',
+    'class' => 'PDO',
+  ),
+  1 => 
+  array (
+    'line' => 57,
+    'function' => 'connect',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Db/Database.php',
+    'class' => 'Elf\\Db\\Driver\\Mysql\\MysqlPdo',
+  ),
+  2 => 
+  array (
+    'line' => 38,
+    'function' => 'connect',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Db/Database.php',
+    'class' => 'Elf\\Db\\Database',
+  ),
+  3 => 
+  array (
+    'line' => 45,
+    'function' => 'db',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/preprocessController.php',
+    'class' => 'Elf\\Db\\Database',
+  ),
+  4 => 
+  array (
+    'line' => '',
+    'function' => 'actionActpower',
+    'file' => '',
+    'class' => 'app\\controller\\nba\\PreprocessController',
+  ),
+  5 => 
+  array (
+    'line' => 60,
+    'function' => 'call_user_func',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => '',
+  ),
+  6 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  7 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  8 => 
+  array (
+    'line' => 56,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
