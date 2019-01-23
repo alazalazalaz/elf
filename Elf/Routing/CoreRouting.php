@@ -23,7 +23,7 @@ class CoreRouting
 		$controller 	= CoreRequest::data('controller');
 		$action 		= CoreRequest::data('action');
 		$controllerPath = APP_NS . CoreRequest::data('controllerPath');
-		
+	
 		$ref = new ReflectionClass($controllerPath);
 
 		//必须是controller的子类

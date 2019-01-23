@@ -1,0 +1,11 @@
+
+-------------------------------------------------------
+time 		:20190123-14:22:46(1548224566)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionmatch
+content 	:
+TYPE:error 
+ERROR:	Call to undefined function app\controller\nba\str_prefix()
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/collectController.php
+LINE: 203
+-------------------------------------------------------

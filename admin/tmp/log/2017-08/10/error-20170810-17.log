@@ -1,0 +1,280 @@
+
+-------------------------------------------------------
+time 		:20170810-17:46:23(1502358383)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\lotteryController\actionindex
+content 	:
+TYPE:exception 
+ERROR:	模板文件不存在：/Users/zhangxiong/work/www/my/elf/elf/app/view/lottery/inddex.tpl
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/View/SmartyView.php
+LINE: 49
+TRACE:array (
+  0 => 
+  array (
+    'line' => 61,
+    'function' => 'view',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Controller/CoreController.php',
+    'class' => 'Elf\\View\\SmartyView',
+  ),
+  1 => 
+  array (
+    'line' => 22,
+    'function' => 'view',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/app/controller/lotteryController.php',
+    'class' => 'Elf\\Controller\\CoreController',
+  ),
+  2 => 
+  array (
+    'line' => '',
+    'function' => 'actionindex',
+    'file' => '',
+    'class' => 'app\\controller\\LotteryController',
+  ),
+  3 => 
+  array (
+    'line' => 60,
+    'function' => 'call_user_func',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => '',
+  ),
+  4 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  5 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  6 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170810-17:46:36(1502358396)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\lotteryController\actionindex
+content 	:
+TYPE:exception 
+ERROR:	Unable to load template 'file:/Users/zhangxiong/work/www/my/elf/elf/app/view/lottery/inddex.tpl'
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_internal_template.php
+LINE: 163
+TRACE:array (
+  0 => 
+  array (
+    'line' => 199,
+    'function' => 'render',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_internal_templatebase.php',
+    'class' => 'Smarty_Internal_Template',
+  ),
+  1 => 
+  array (
+    'line' => 114,
+    'function' => '_execute',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Vendor/Smarty/Libs/sysplugins/smarty_internal_templatebase.php',
+    'class' => 'Smarty_Internal_TemplateBase',
+  ),
+  2 => 
+  array (
+    'line' => 52,
+    'function' => 'display',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/View/SmartyView.php',
+    'class' => 'Smarty_Internal_TemplateBase',
+  ),
+  3 => 
+  array (
+    'line' => 61,
+    'function' => 'view',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Controller/CoreController.php',
+    'class' => 'Elf\\View\\SmartyView',
+  ),
+  4 => 
+  array (
+    'line' => 22,
+    'function' => 'view',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/app/controller/lotteryController.php',
+    'class' => 'Elf\\Controller\\CoreController',
+  ),
+  5 => 
+  array (
+    'line' => '',
+    'function' => 'actionindex',
+    'file' => '',
+    'class' => 'app\\controller\\LotteryController',
+  ),
+  6 => 
+  array (
+    'line' => 60,
+    'function' => 'call_user_func',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => '',
+  ),
+  7 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  8 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  9 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170810-17:54:56(1502358896)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\lotteryController\index
+content 	:
+TYPE:error 
+ERROR:	Undefined variable: action
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRequest.php
+LINE: 113
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170810-17:55:36(1502358936)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\lotteryController\actionindex
+content 	:
+TYPE:exception 
+ERROR:	模板文件不存在：/Users/zhangxiong/work/www/my/elf/elf/app/view/lotterylottery/inddex.tpl
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/View/SmartyView.php
+LINE: 50
+TRACE:array (
+  0 => 
+  array (
+    'line' => 61,
+    'function' => 'view',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Controller/CoreController.php',
+    'class' => 'Elf\\View\\SmartyView',
+  ),
+  1 => 
+  array (
+    'line' => 22,
+    'function' => 'view',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/app/controller/lotteryController.php',
+    'class' => 'Elf\\Controller\\CoreController',
+  ),
+  2 => 
+  array (
+    'line' => '',
+    'function' => 'actionindex',
+    'file' => '',
+    'class' => 'app\\controller\\LotteryController',
+  ),
+  3 => 
+  array (
+    'line' => 60,
+    'function' => 'call_user_func',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => '',
+  ),
+  4 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  5 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  6 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20170810-17:56:01(1502358961)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\lotteryController\actionindex
+content 	:
+TYPE:exception 
+ERROR:	模板文件不存在：/Users/zhangxiong/work/www/my/elf/elf/app/view/lotteryindex.tpl
+FILE: /Users/zhangxiong/work/www/my/elf/elf/Elf/View/SmartyView.php
+LINE: 50
+TRACE:array (
+  0 => 
+  array (
+    'line' => 61,
+    'function' => 'view',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Controller/CoreController.php',
+    'class' => 'Elf\\View\\SmartyView',
+  ),
+  1 => 
+  array (
+    'line' => 22,
+    'function' => 'view',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/app/controller/lotteryController.php',
+    'class' => 'Elf\\Controller\\CoreController',
+  ),
+  2 => 
+  array (
+    'line' => '',
+    'function' => 'actionindex',
+    'file' => '',
+    'class' => 'app\\controller\\LotteryController',
+  ),
+  3 => 
+  array (
+    'line' => 60,
+    'function' => 'call_user_func',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Routing/CoreRouting.php',
+    'class' => '',
+  ),
+  4 => 
+  array (
+    'line' => 89,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\Routing\\CoreRouting',
+  ),
+  5 => 
+  array (
+    'line' => 73,
+    'function' => 'doRouting',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/Elf/Startup/CoreStartup.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+  6 => 
+  array (
+    'line' => 54,
+    'function' => 'exec',
+    'file' => '/Users/zhangxiong/work/www/my/elf/elf/web/index_dev.php',
+    'class' => 'Elf\\StartUp\\CoreStartUp',
+  ),
+)
+-------------------------------------------------------

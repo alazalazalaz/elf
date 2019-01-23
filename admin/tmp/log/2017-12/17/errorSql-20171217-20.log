@@ -1,0 +1,22 @@
+
+-------------------------------------------------------
+time 		:20171217-20:31:06(1513513866)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionodds
+content 	:
+ERROR:	SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'nba.nba_match_odds_avg.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+SQL:	SELECT * FROM nba_match_odds_avg GROUP BY match_id
+PARAM:	array (
+)
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171217-20:31:25(1513513885)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\collectController\actionodds
+content 	:
+ERROR:	SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'nba.nba_match_odds_avg.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+SQL:	SELECT * FROM nba_match_odds_avg GROUP BY match_id
+PARAM:	array (
+)
+-------------------------------------------------------

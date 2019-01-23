@@ -1,0 +1,22 @@
+
+-------------------------------------------------------
+time 		:20171218-17:29:58(1513589398)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\preprocessController\actionactpower
+content 	:
+TYPE:error 
+ERROR:	Division by zero
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/preprocessController.php
+LINE: 72
+-------------------------------------------------------
+
+-------------------------------------------------------
+time 		:20171218-17:30:28(1513589428)
+file 		:/Users/zhangxiong/work/www/my/elf/elf/app/
+request 	:controller\nba\preprocessController\actionactpower
+content 	:
+TYPE:error 
+ERROR:	Division by zero
+FILE: /Users/zhangxiong/work/www/my/elf/elf/app/controller/nba/preprocessController.php
+LINE: 72
+-------------------------------------------------------

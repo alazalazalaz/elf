@@ -87,8 +87,8 @@ class CoreRequest
 
 
 	private static function _recPath($string){
-		$filePath = str_replace('_', DS, $string);
-		$fileArr  = explode(DS, $filePath);
+		$filePath = str_replace('_', '\\', $string);
+		$fileArr  = explode('\\', $filePath);
 
 		$controller = end($fileArr);
 
